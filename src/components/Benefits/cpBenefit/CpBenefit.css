@@ -1,0 +1,20 @@
+.cpBenefit__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.cpBenefit__icon {
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cpBenefit__name {
+    font-size: var(--h3-font-size);
+}

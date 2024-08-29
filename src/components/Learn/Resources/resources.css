@@ -1,0 +1,120 @@
+.material__content {
+    max-width: 12rem;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.material__content img {
+    height: 5rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.material__text {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.resources__wrapper {
+    flex: 3;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(20px); 
+    padding: 1.5rem 2rem;
+}
+
+.resources__wrapper .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.resources__wrapper .swiper-wrapper {
+    padding-bottom: 1rem;
+}
+
+.resources__wrapper .swiper {
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.resources__wrapper .swiper-button-prev,
+.resources__wrapper .swiper-button-next {
+    position: absolute;
+    top: calc(100% - 3rem);
+    z-index: 10;
+    transform: scale(0.5);
+}
+
+.resources__wrapper .swiper-button-prev {
+    left: 35%;
+}
+
+.resources__wrapper .swiper-button-next {
+    right: 35%;
+}
+
+.swiper-material .material__text {
+    color: var(--dark);
+}
+
+@media screen and (max-width: 1244px) {
+    .resources__wrapper .swiper-button-prev,
+    .resources__wrapper .swiper-button-next {
+        transform: scale(0.45);
+        top: calc(100% - 2.3rem);
+    }
+
+    .resources__wrapper .swiper-button-prev {
+        left: 28%;
+    }
+    
+    .resources__wrapper .swiper-button-next {
+        right: 28%;
+    }
+}
+
+@media screen and (max-width: 1214px) {
+    .resources__wrapper {
+        backdrop-filter: blur(0px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .resources__wrapper .swiper-button-prev,
+    .resources__wrapper .swiper-button-next {
+        transform: scale(0.4);
+        top: calc(100% - 2.2rem);
+    }
+
+    .resources__wrapper .swiper-button-prev {
+        left: 25%;
+    }
+    
+    .resources__wrapper .swiper-button-next {
+        right: 25%;
+    }
+
+    .resources__wrapper .swiper-wrapper {
+        padding-bottom: 0.8rem;
+    }
+
+    .material__content {
+        max-width: 10rem;
+        position: relative;
+        margin-top: 3rem;
+    }
+
+    .material__content img {
+        height: 4rem;
+    }
+
+    .material__text {
+        padding: 1.2rem;
+        padding-top: 2.5rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,53 @@
+.checkpoint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.checkpoint__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: beige; */
+    max-width: 8rem;
+}
+
+.checkpoint__circle {
+    width: 8vw;
+    height: 4vw;
+    background-color: var(--primary);
+    border-radius: 50%;  
+    box-shadow: 0 0 10px 3px var(--primary),
+    0 -30px 30px -10px rgba(255, 208, 99, 0.6);
+    position: relative;
+}
+
+/* .checkpoint__circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5%;
+    transform: translateY(0);
+    width: 90%;
+    height: 20%;
+    background: linear-gradient(rgba(255, 221, 111, 0.385), var(--primary));
+    filter: blur(20px);
+    border-radius: 80%;
+} */
+
+.checkpoint__title {
+    font-weight: var(--font-bold);
+    font-size: var(--regular-font-size);
+    margin-top: 0.8rem;
+    text-align: center;
+}
+
+.checkpoint__date{
+    font-size: var(--small-font-size);
+    text-align: center;
+}
+

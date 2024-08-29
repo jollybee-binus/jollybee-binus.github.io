@@ -1,0 +1,40 @@
+p {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: var(--medium-accent);
+    transition: 0.2s;
+}
+
+a:hover {
+    color: var(--dark-accent);
+}
+
+.about {
+    background-color: var(--white);
+    color: var(--dark);
+}
+
+.about__title {
+    color: var(--dark);
+}
+
+.cp__section {
+    margin-bottom: 4rem;
+    grid-template-columns: 7fr 3fr;
+}
+
+.cp__highlight {
+    color: var(--primary);
+}
+
+.jb__section {
+    text-align: right;
+    margin-left: auto;
+    grid-template-columns: 3fr 7fr;
+}
+
+.jb__highlight {
+    color: var(--primary);
+}

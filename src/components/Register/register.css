@@ -1,0 +1,119 @@
+.register__hello {
+    position: relative;
+}
+
+.register__hello span {
+    font-size: var(--h3-font-size);
+}
+
+.register__greet {
+    /* margin-bottom: 0.5rem; */
+}
+
+.joinUs__container {
+    position: relative;
+    display: inline-block;
+}
+
+.joinUs__container span {
+    position: relative;
+    z-index: 2;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-bold);
+}
+
+.lingkaran {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+.register__buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    color: var(--dark);
+}
+
+.btn__register {
+    background-color: var(--secondary);
+}
+
+.btn__discord {
+    background-color: var(--accent);
+}
+
+.btn__register:hover {
+    box-shadow: 0 4px 20px var(--primary);
+}
+
+.btn__discord:hover {
+    box-shadow: 0 4px 20px var(--secondary);
+}
+
+.register__cards {
+    display: flex;
+    justify-items: stretch;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.info__card {
+    width: 50%;
+    padding: 1.5rem 2rem;
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+    color: var(--dark);
+    box-shadow: 0px 0px 15px var(--white);
+}
+
+.info__card h2 {
+    margin-bottom: 0.3rem;
+}
+
+.timeline__road {
+    position: relative;
+    width: 100%;
+}
+
+.timeline__road img {
+    margin-top: 0rem;
+    transform: scaleY(1.2);
+}
+
+.faq__content {
+    margin-top: 2rem;
+    grid-template-columns: 2fr 6fr;
+    column-gap: 4rem;
+    align-items: center;
+}
+
+.faq__list {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.register__timeline {
+    position: relative;
+}
+
+.bebekhalo {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    height: 55%;
+    width: auto;
+}
+
+.jejaksetapak {
+    width: 90%;
+}

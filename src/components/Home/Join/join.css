@@ -1,0 +1,29 @@
+.join {
+    display: flex;
+    column-gap: 3rem;
+    justify-content: center;
+}
+
+.join img {
+    width: 10rem;
+}
+
+.join__box h1, p {
+    color: var(--dark);
+}
+
+.join__box h1 {
+    margin-bottom: 1rem;
+}
+
+.join__box p {
+    margin-bottom: 0rem;
+}
+
+.join__box {
+    background-color: var(--white);
+    padding: 3rem 5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+}

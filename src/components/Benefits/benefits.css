@@ -1,0 +1,44 @@
+.benefit__banner {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__title {
+    max-width: 60vw;
+    text-align: center;
+}
+
+.bebekcp {
+    position: absolute;
+    bottom: 0;
+}
+
+.icpcwf {
+    position: absolute;
+    z-index: -10;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.why__cp {
+    background-color: var(--white);
+    color: var(--dark);
+}
+
+.cp__benefits {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.jb__benefits {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 3rem;
+    align-items: stretch;
+}
