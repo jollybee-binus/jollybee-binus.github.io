@@ -11,7 +11,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Jollybee-Website">
       <div className="App">
         <Navbar></Navbar>
 
