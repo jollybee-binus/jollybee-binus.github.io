@@ -150,6 +150,16 @@
     }
 }
 
+@media screen and (max-width: 518px) {
+    .resources__wrapper .swiper-button-prev {
+        left: -7%;
+    }
+    
+    .resources__wrapper .swiper-button-next {
+        right: -7%;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .resources__wrapper {
         flex: none;

@@ -259,4 +259,13 @@
     .jalansetapak {
         top: 5.5rem;
     }
+
+    .learn__otherSources {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        background-color: var(--gray);
+        mask: linear-gradient(transparent 0%, var(--gray) 3%, var(--gray) 97%, transparent 100%);
+    }
 } 

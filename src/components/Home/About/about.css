@@ -11,6 +11,17 @@ a:hover {
     color: var(--dark-accent);
 }
 
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .about {
     background-color: var(--white);
     color: var(--dark);
@@ -39,18 +50,21 @@ a:hover {
     color: var(--primary);
 }
 
+.jb__section .links-container {
+    justify-content: flex-end;
+}
+
 @media screen and (max-width: 768px) {
     .cp__section {
         margin-bottom: 3rem;
         width: 100%;
     }
 
-    span {
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-    }
-
     .jb__section {
         width: 100%;
+    }
+
+    .text-container {
+        gap: 0.5rem;
     }
 }
