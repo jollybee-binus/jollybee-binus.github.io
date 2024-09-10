@@ -5,6 +5,8 @@ import photos_right from '../../assets/photos_right.png';
 import jollybee_logo from '../../assets/jollybeelogo.png';
 import About from './About/About';
 import Join from './Join/Join';
+import Alumni from './Alumni/Alumni';
+import Sponsors from './Sponsors/Sponsors';
 import AdjustHeight from '../AdjustHeight';
 
 const Home = () => {
@@ -41,6 +43,10 @@ const Home = () => {
             <div id="about-section">
                 <About></About>
             </div>
+
+            <Alumni></Alumni>
+
+            <Sponsors></Sponsors>
 
             <Join></Join>
             

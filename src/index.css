@@ -123,6 +123,9 @@
 
   /* === Margin === */
   --margin-title-bottom: 1.5rem;
+
+  /* === Gap between text container === */
+  --text-container-gap: 1rem;
 }
 
 /* === Responsive typography === */
@@ -159,6 +162,7 @@
     --padding-lr: 4rem;
     --padding-tb: 3.2rem;
     --margin-title-bottom: 1.1rem;
+    --text-container-gap: 0.5rem;
   }
 }
 
@@ -290,4 +294,15 @@ img {
 .greet {
   font-size: var(--greet-font-size);
   margin-bottom: 0.5rem;
+}
+
+.links-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--text-container-gap);
 }
