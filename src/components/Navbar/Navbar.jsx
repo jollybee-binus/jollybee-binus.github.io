@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 import JollybeeLogo from '../../assets/jollybeelogo.png';
+import ScrollTop from '../ScrollTop.jsx';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [burgerOpen, setBurgerOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -28,17 +30,34 @@ const Navbar = () => {
         navbar += ' navbar__scrolled';
     }
 
+    const burgerClick = () => {
+        setBurgerOpen(!burgerOpen);
+    }
+
+
+
     return (
         <div className={navbar}>
+            <ScrollTop></ScrollTop>
             {/* logo */}
-            <img src={JollybeeLogo} alt="JB Logo" className='logo'/>
+            <Link to="/">
+                <img src={JollybeeLogo} alt="JB Logo" className='logo'></img>
+            </Link>
 
             {/* menu list */}
-            <div className="links">
-                <Link to="/" className="link">Home</Link>
-                <Link to="/learn" className="link">Learn</Link>
-                <Link to="/benefits" className="link">Benefits</Link>
-                <Link to="/register" className="link">Register</Link>
+            <div className="burger__wrapper" onClick={burgerClick}>
+                <div className={`burger__bar ${burgerOpen ? 'open' : ''}`}></div>
+                <div className={`burger__bar ${burgerOpen ? 'open' : ''}`}></div>
+                <div className={`burger__bar ${burgerOpen ? 'open' : ''}`}></div>
+            </div>
+            <div className={`links ${burgerOpen ? 'open' : ''}`} onClick={burgerClick}>
+                <Link to="/" className={`link ${burgerOpen ? 'open' : ''}`}>Home</Link>
+                <Link to="/learn" className={`link ${burgerOpen ? 'open' : ''}`}>Learn</Link>
+                <Link to="/benefits" className={`link ${burgerOpen ? 'open' : ''}`}>Benefits</Link>
+                <Link to="/register" className={`link ${burgerOpen ? 'open' : ''}`}>Register</Link>
+            </div>
+
+            <div className={`background__wrapper ${burgerOpen ? 'open' : ''}`} onClick={burgerClick}>
             </div>
         </div>
   )

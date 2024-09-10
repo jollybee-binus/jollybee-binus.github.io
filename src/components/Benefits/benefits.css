@@ -1,5 +1,5 @@
 .benefit__banner {
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -10,11 +10,13 @@
 .banner__title {
     max-width: 60vw;
     text-align: center;
+    font-size: var(--extralg-font-size);
 }
 
-.bebekcp {
+.lebahcp {
     position: absolute;
     bottom: 0;
+    box-shadow: 0px 1px 0px 1px var(--white);
 }
 
 .icpcwf {
@@ -41,4 +43,36 @@
     row-gap: 2rem;
     column-gap: 3rem;
     align-items: stretch;
+}
+
+@media screen and (max-width: 768px) {
+    .jb__benefits {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1.5rem;
+        column-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .jb__benefits {
+        row-gap: 1.2rem;
+        column-gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .jb__benefits {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+
+    .banner__title {
+        font-size: 1.5rem;
+    }
+
+    .cp__benefits {
+        grid-template-columns: 1fr;
+        gap: 0.7rem;
+    }
 }

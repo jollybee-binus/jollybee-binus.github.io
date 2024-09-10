@@ -3,13 +3,19 @@ import './jbBenefit.css';
 
 const JbBenefit = ({jbBenefit}) => {
     const [dropdown, setDropdown] = useState(false);
+    const handleMouseEnter = (() => {
+        setDropdown(true);
+    });
+    const handleMouseLeave = (() => {
+        setDropdown(false);
+    });
     const handleClick = (() => {
         setDropdown(!dropdown);
-    });
+    })
 
     return (
         <div className="jbBenefit__wrapper">
-            <button onClick={handleClick} className={`dropdown__btn ${dropdown ? 'open' : 'close'}`}>
+            <button onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleClick} className={`dropdown__btn ${dropdown ? 'open' : 'close'}`}>
                 <div className="title__container">
                     <h3 className='jbBenefit__name'>{jbBenefit.name}</h3>
                     <div className={`dropdown-icon ${dropdown ? 'open' : 'close'}`}>

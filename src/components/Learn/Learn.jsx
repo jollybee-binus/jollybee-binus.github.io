@@ -3,7 +3,6 @@ import Resources from './Resources/Resources';
 import jalansetapak from '../../assets/jalansetapak.png';
 import jalansetapak2 from '../../assets/jalansetapak2.png';
 import jalansetapak3 from '../../assets/jalansetapak3.png';
-import jalansetapak4 from '../../assets/jalansetapak4.png';
 import cf_logo from '../../assets/cf_logo.png';
 import atcoder_logo from '../../assets/atcoder_logo.png';
 import tlx_logo from '../../assets/tlx_logo.png';
@@ -43,13 +42,10 @@ const Learn = () => {
 
   useEffect(() => {
     const updateImage = () => {
-      if (window.innerWidth <= 768) {
-        setBackgroundImage(jalansetapak4);
-      }
-      else if (window.innerWidth <= 896) {
+      if (window.innerWidth <= 480) {
         setBackgroundImage(jalansetapak3);
       }
-      else if (window.innerWidth <= 1024) {
+      else if (window.innerWidth <= 896) {
         setBackgroundImage(jalansetapak2);
       }
       else {
@@ -82,7 +78,7 @@ const Learn = () => {
               <h3>For experienced</h3>
               <span>If you already have experience in CP, we recommend you to try their <a href="https://tlx.toki.id/courses/competitive">basic CP courses</a> for more challenging topics.</span>
             </div>
-          </div>
+          </div> 
         </div>
 
         <div className="learn__otherSources section">

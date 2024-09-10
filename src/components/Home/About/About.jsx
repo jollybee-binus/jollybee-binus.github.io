@@ -21,41 +21,31 @@ const About = () => {
 
     return (
         <div className="about section">
-            <div className="cp__section grid">
-                <div>
-                    <h1 className="section__title about__title">
-                        What is <span className="cp__highlight">Competitive Programming?</span>
-                    </h1>
-                    <p>
-                    Competitive Programming, or CP in short, is a mind sport in which contestants are given a set of programming problems to be solved within a preset amount of time. Competitions are supported by various companies such as 
+            <div className="cp__section">
+                <h1 className="section__title about__title">
+                    What is <span className="cp__highlight">Competitive Programming?</span>
+                </h1>
+                <span>
+                Competitive Programming, or CP in short, is a mind sport in which contestants are given a set of programming problems to be solved within a preset amount of time.
+                </span>
+                <br />
+                <span>
+                    Competitions are supported by various companies such as   
                     {companies.map((company) => (
-                        <span key={company.name}>
-                            <a href={company.link}>{company.name}</a>
-                            , 
-                        </span>
-                            
+                        <a href={company.link}>{company.name}, </a>
                     ))}
                     and others.
-                    </p>
-                </div>
-                <div className="decor">
-                    <img src=" " alt="" />
-                </div>
+                </span>
             </div>
 
-            <div className="jb__section grid">
-                <div className="decor">
-                    <img src="" alt="" />
-                </div>
-
-                <div>
+            <div className="jb__section">
                     <h1 className="section__title about__title">
                         What is <span className='jb__highlight'>Jollybee?</span>
                     </h1>
-                    <p>
+                    <span>
                         Jollybee is Bina Nusantara University's official CP team. Currently, Jollybee has 30+ active members being coached directly by the former chief judge of the Indonesian National Science Olympiad in Informatics (OSN bidang Komputer) 2020 and former judge of the International Olympiad in Informatics (IOI) 2022.
-                    </p>
-                    <p>
+                    </span>
+                    <span>
                         Jollybee has won numerous national and international competitions and has represented Indonesia in the ICPC World Finals several times.
                         Please visit our 
                         {socials.map((social) => (
@@ -65,8 +55,7 @@ const About = () => {
                             </span>
                                 
                         ))}
-                    </p>
-                </div>
+                    </span>
             </div>
         </div>
     )

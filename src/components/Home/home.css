@@ -1,7 +1,7 @@
 .banner {
     position: relative;
     overflow: hidden;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .header {
@@ -30,6 +30,10 @@
     z-index: -10;
 }
 
+.photos__center {
+    visibility: hidden;
+}
+
 .home .desc {
     font-size: var(--h3-font-size);
     color: var(--white);
@@ -37,10 +41,18 @@
 
 @keyframes glow {
     0%, 100% {
-        text-shadow: 0 0 5rem var(--white);
+        box-shadow: 0 0 0px var(--white);
+    }
+    30% {
+        margin-top: 0.5rem;
     }
     50% {
-        text-shadow: 0 0 0rem var(--white);
+        box-shadow: 0 0 5px var(--white);
+        margin-top: 0.8rem;
+    }
+    70% {
+        box-shadow: 0 0 10px var(--white);
+        margin-top: 1rem;
     }
 }
 
@@ -54,11 +66,91 @@
     flex-direction: column;
     align-items: center;
     background-color: transparent;
+}
+
+.home .dropdown-icon {
+    margin-top: 0.8rem;
+}
+
+
+.home .dropdown-icon span {
+    display: inline-block;
+    position: absolute;
+    width: calc(50% * 1.25);
+    height: 3px;
+    background-color: var(--white);
+    border-radius: 2px;
     animation: glow 2s infinite ease-in-out;
 }
 
-.banner span {
-    margin-top: 0.5rem;
-    color: var(--white);
-    font-weight: var(--bold);
+.home .dropdown-icon span:nth-child(1) {
+    transform: rotate(45deg);
+    left: 0;
+}
+
+.home .dropdown-icon span:nth-child(2) {
+    transform: rotate(-45deg);
+    right: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+
+    .banner .jollybee_logo {
+        width: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .banner .jollybee_logo {
+        width: 2.5rem;
+    }
+
+    .photos__left {
+        left: -10rem;
+        height: 80vh;
+    }
+    
+    .photos__right {
+        right: -7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .banner .jollybee_logo {
+        width: 2.2rem;
+    }
+
+    .photos__left,
+    .photos__right {
+        height: 70vh;
+        object-fit: cover;
+        overflow: visible;
+    }
+
+    .photos__left {
+        left: -10rem;
+        height: 70vh;
+    }
+    
+    .photos__right {
+        right: -10rem;
+        height: 70vh;
+        bottom: -1rem;
+    }
 }

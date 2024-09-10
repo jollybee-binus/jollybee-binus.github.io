@@ -88,6 +88,8 @@
   --yellow-light: #F0E5CC;
   --yellow-yolk: #FFDF9A;
   --choco: #A39887;
+  --gray: #888581;
+  --light-gray: #e7e4e2;
 }
 
 :root {
@@ -97,7 +99,7 @@
   --h1-font-size: 2.5rem;
   --h2-font-size: 1.75rem;
   --h3-font-size: 1.25rem;
-  --extralg-font-size: 3rem;
+  --extralg-font-size: 4rem;
   --large-font-size: 1.1rem;
   --normal-font-size: 1rem;
   --small-font-size: 0.875rem;
@@ -126,57 +128,66 @@
 /* === Responsive typography === */
 @media screen and (max-width: 1024px) {
   :root {
-    --greet-font-size: 3rem;
-    --h1-font-size: 2rem;
+    --greet-font-size: 3.2rem;
+    --h1-font-size: 2.2rem;
     --h2-font-size: 1.5rem;
-    --h3-font-size: 1rem;
-    --extralg-font-size: 2rem;
-    --large-font-size: 0.95rem;
+    --h3-font-size: 1.1rem;
+    --extralg-font-size: 3rem;
+    --large-font-size: 1rem;
     --normal-font-size: 0.935rem;
     --small-font-size: 0.813rem;
     --xsmall-font-size: 0.75rem;
     
     --padding-lr: 4rem;
     --padding-tb: 3.8rem;
-    --margin-title-bottom: 1.3rem;
+    --margin-title-bottom: 1.35rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   :root {
     --greet-font-size: 2.8rem;
-    --h1-font-size: 1.8rem;
-    --h2-font-size: 1.3rem;
-    --h3-font-size: 0.975rem;
-    --extralg-font-size: 1.8rem;
+    --h1-font-size: 1.95rem;
+    --h2-font-size: 1.35rem;
+    --h3-font-size: 1rem;
+    --extralg-font-size: 2.75rem;
     --large-font-size: 0.9rem;
-    --normal-font-size: 0.9rem;
-    --small-font-size: 0.8rem;
-    --xsmall-font-size: 0.7rem;
+    --normal-font-size: 0.935rem;
+    --small-font-size: 0.813rem;
+    --xsmall-font-size: 0.75rem;
 
     --padding-lr: 4rem;
     --padding-tb: 3.2rem;
-    --margin-title-bottom: 1rem;
+    --margin-title-bottom: 1.1rem;
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 576px) {
   :root {
-    --greet-font-size: 2.2rem;
-    --h1-font-size: 1.75rem;
-    --h2-font-size: 1rem;
-    --h3-font-size: 0.7rem;
-    --extralg-font-size: 1.8rem;
-    --large-font-size: 0.9rem;
-    --normal-font-size: 0.9rem;
-    --small-font-size: 0.8rem;
-    --xsmall-font-size: 0.7rem;
+    --greet-font-size: 2.25rem;
+    --h1-font-size: 1.7rem;
+    --h2-font-size: 1.15rem;
+    --h3-font-size: 1rem;
+    --extralg-font-size: 2.2rem;
+    --large-font-size: 0.85rem;
+    --normal-font-size: 0.935rem;
+    --small-font-size: 0.813rem;
+    --xsmall-font-size: 0.75rem;
 
-    --padding-lr: 4rem;
-    --padding-tb: 3.2rem;
-    --margin-title-bottom: 1rem;
+    --padding-lr: 2.8rem;
+    --padding-tb: 2.95rem;
+    --margin-title-bottom: 0.8rem;
   }
 }
+
+@media screen and (max-width: 480px) {
+  :root {
+    --padding-lr: 2.5rem;
+    --padding-tb: 2.85rem;
+    --margin-title-bottom: 0.75rem;
+  }
+}
+
 
 /* === Base ==== */
 * {
@@ -211,6 +222,7 @@ h1, h2, h3 {
 
 ul {
   list-style: none;
+  padding-left: 1rem;
 }
 
 li {

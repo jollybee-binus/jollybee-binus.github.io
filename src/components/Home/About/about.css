@@ -22,7 +22,7 @@ a:hover {
 
 .cp__section {
     margin-bottom: 4rem;
-    grid-template-columns: 7fr 3fr;
+    width: 70%;
 }
 
 .cp__highlight {
@@ -32,9 +32,25 @@ a:hover {
 .jb__section {
     text-align: right;
     margin-left: auto;
-    grid-template-columns: 3fr 7fr;
+    width: 70%;
 }
 
 .jb__highlight {
     color: var(--primary);
+}
+
+@media screen and (max-width: 768px) {
+    .cp__section {
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+
+    span {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .jb__section {
+        width: 100%;
+    }
 }

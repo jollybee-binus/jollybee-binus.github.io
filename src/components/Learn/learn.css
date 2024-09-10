@@ -1,18 +1,19 @@
 .learn {
     position: relative;
+    overflow: hidden;
 }
 
 .jalansetapak {
     position: absolute;
     z-index: -1;
-    top: 15rem;
+    top: 3rem;
     object-fit: cover;
 }
 
 .learn__start {
     display: flex;
     flex-direction: column;
-}
+} 
 
 .learn__start h3 {
     margin-bottom: 3rem;
@@ -37,16 +38,22 @@
     margin-bottom: 0.3rem;
 }
 
+
 .learn__otherSources {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
+    background-color: var(--gray);
+    box-shadow: 0 0 10px 10px var(--gray);
 }
+
+
 
 .otherSources-text {
     flex: 1;
 }
+
 
 .learn__oj {
     display: flex;
@@ -82,6 +89,7 @@
 .oj-recommendations {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 2rem;
     margin-top: 1rem;
 }
@@ -95,6 +103,7 @@
 
 .oj__container img {
     max-width: 4.2rem;
+    margin-bottom: 0.8rem;
 }
 
 .oj__container span {
@@ -140,9 +149,6 @@
 
 @media screen and (max-width: 1214px) {
     .learn__otherSources {
-        backdrop-filter: blur(20px); 
-    }
-    .learn__otherSources {
         align-items: center;
         gap: 1rem;
     }
@@ -182,24 +188,74 @@
     .learn__important img {
         transform: scale(0.8);
     }
-}
+} 
 
 @media screen and (max-width: 768px) {
 
     .learn__oj-main {
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .learn__oj-main h1 {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.9rem;
     }
 
     .learn__important {
         gap: 0rem;
-        /* overflow: hidden; */
     }
 
     .learn__important img {
         transform: scale(0.6);
     }
+
+    .oj-recommendations {
+        justify-content: center;
+    }
+
+    .oj__container img {
+        max-width: 3.8rem;
+    }
+
+    .for-content {
+        width: 45%;
+        border-radius: 10px;
+        padding: 1.3rem 1.5rem;
+    }
 }
+
+@media screen and (max-width: 480px) {
+    .learn__start-for {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .for-content {
+        width: 100%;
+    }
+
+    .learn__otherSources {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .otherSources-text {
+        flex: none;
+    }
+
+    .oj__container img {
+        max-width: 3.5rem;
+        flex-wrap: wrap;
+    }
+
+    .learn__oj-main-text {
+        flex: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .jalansetapak {
+        top: 5.5rem;
+    }
+} 

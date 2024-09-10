@@ -1,13 +1,59 @@
+.register {
+    overflow: hidden;
+}
+
+.hexagon1,
+.hexagon2,
+.hexagon3,
+.peekaboo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 20;
+}
+
+.hexagon1 {
+    top: 9vh;
+    right: 14vw;
+    width: 18vw;
+    transform: rotate(-5deg);
+}
+
+.hexagon2 {
+    top: -5vh;
+    right: 0vw;
+    width: 14vw;
+    transform: rotate(-15deg);
+}
+
+.hexagon3 {
+    top: 28vh;
+    right: 5vw;
+    width: 10vw;
+    transform: rotate(6deg);
+}
+
+.hexagon1:hover {
+    transform: rotate(2deg);
+}
+
+.hexagon2:hover {
+    transform: rotate(-30deg);
+}
+
+.hexagon3:hover {
+    transform: rotate(26deg);
+}
+
 .register__hello {
     position: relative;
 }
 
 .register__hello span {
     font-size: var(--h3-font-size);
-}
-
-.register__greet {
-    /* margin-bottom: 0.5rem; */
 }
 
 .joinUs__container {
@@ -24,7 +70,7 @@
 
 .lingkaran {
     position: absolute;
-    top: -50%;
+    top: -55%;
     left: 0;
     z-index: 1;
     width: 100%;
@@ -105,15 +151,200 @@
     position: relative;
 }
 
-.bebekhalo {
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    right: 0;
-    height: 55%;
-    width: auto;
+.timeline__details {
+    position: relative;
 }
 
-.jejaksetapak {
-    width: 90%;
+.jejaklebah {
+    position: absolute;
+    padding-left: 8%;
 }
+
+.poinlebah__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.timeline__content {
+    display: grid;
+    width: calc(100% - 5rem);
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+    transform: translateY(-1.5rem);
+}
+
+.register__cards ul {
+    list-style: circle;
+}
+
+@media screen and (max-width: 1300px) {
+    .hexagon1 {
+        top: 10vh;
+        right: calc(6vw - 1rem);
+        width: 17vw;
+    }
+    
+    .hexagon2 {
+        top: -5vh;
+        right: -3vw;
+        width: 13vw;
+    }
+    
+    .hexagon3 {
+        top: 23vh;
+        right: -3vw;
+        width: 9vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .register__buttons {
+        margin-top: 1.5rem;
+        gap: 1.5em;
+    }
+
+    .register__cards {
+        gap: 2.5rem;
+    }
+
+    .timeline__details {
+        display: flex;
+        flex-direction: row;
+        gap: 0rem;
+        align-items: flex-start;
+    }
+
+
+    .jejaklebah {
+        position: absolute;
+        top: 0;
+        left: -1.5rem;
+        padding: 0;
+        transform: translateX(1.5rem);
+        height: 100%;
+        padding-left: 0%;
+    }
+
+    .timeline__content {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        row-gap: 1.2rem;
+        transform: translateY(0);
+        padding: 3rem 0 3.5rem 0;
+    }
+
+    .poinlebah__wrapper {
+        display: none;
+    }
+
+    .hexagon1 {
+        top: 6vh;
+        right: 5vw;
+        width: 17vw;
+    }
+    
+    .hexagon2 {
+        top: -5vh;
+        right: -3vw;
+        width: 13vw;
+    }
+    
+    .hexagon3 {
+        top: 15vh;
+        right: -3vw;
+        width: 9vw;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .hexagon1 {
+        top: 8vh;
+        right: 3.5vw;
+        width: 16vw;
+    }
+    
+    .hexagon2 {
+        top: -1vh;
+        right: -4vw;
+        width: 12vw;
+    }
+    
+    .hexagon3 {
+        top: 15vh;
+        right: -4vw;
+        width: 8vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .register__buttons {
+        gap: 1.2em;
+    }
+
+    .register__cards {
+        gap: 2rem;
+        margin-top: 2.8rem;
+        flex-direction: column;
+    }
+
+    .info__card {
+        width: 100%;
+        padding: 1.5rem 2rem;
+        border-radius: 12px;
+    }
+
+    .faq__content {
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+
+    .faq__content img {
+        display: block;
+        position: absolute;
+        top: -2.8rem;
+        right: -1.8rem;
+        width: 3.5rem;
+    }
+
+    .faq__list {
+        padding: 1.7rem 2.2rem;
+        gap: 1.1rem;
+    }
+
+    .hexagon1,
+    .hexagon2,
+    .hexagon3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .lingkaran {
+        top: -50%;
+    }
+
+    .joinUs__container {
+        margin-top: 0.8rem;
+    }
+
+    .faq__content img {
+        top: -2rem;
+        right: -1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .faq__content img {
+        top: -2.5rem;
+        right: -1.2rem;
+    }
+
+    .faq__list {
+        padding: 1.7rem 2.1rem;
+        gap: 1.1rem;
+    }
+}
+

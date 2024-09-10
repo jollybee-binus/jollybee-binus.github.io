@@ -5,8 +5,12 @@
     background-color: var(--choco);
 }
 
+.footer a {
+    color: var(--white);
+}
+
 .footer img {
-    width: 1.8rem;
+    width: 2.2rem;
 }
 
 .footer span {
@@ -18,5 +22,39 @@
     display: flex;
     column-gap: 1rem;
     align-items: center;
+}
+
+.footer__left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 0.8rem 1.5rem;
+    }
+    .footer__left span {
+        line-height: 1;
+        margin-left: 0.5rem;
+        font-size: 0.7rem;
+        max-width: 90%;
+    }
+
+    .footer img {
+        width: 1.5rem;
+    }
+
+    .footer__right {
+        column-gap: 0.8rem;
+    }
+
+    .social-icon {
+        font-size: 1rem;
+    }
 }
 

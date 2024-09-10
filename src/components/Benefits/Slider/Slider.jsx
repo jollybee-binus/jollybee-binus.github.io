@@ -16,7 +16,7 @@ const Slider = () => {
         {name: "vioalbert", year: "B24", src: `${bebekdengklek}`, desc: "Bagi kalian yang suka problem solving dan programming, Jollybee adalah komunitas yang pas buat kalian. <br><br> Selain bisa pergi ke lomba2 dan juara, kalian juga bisa bersosialisasi dan havae fun dengan sesama anggota yang punya interest yang sama. Terkadang member-member Jollybee suka ngajak jalan-jalan, main arcade, dan makan-makan bareng. <br><br> Jadi kalian ga cuma bisa berprestasi, tapi juga have fun sepanjang perjalanan Competitive Programming kalian!"},
         {name: "Feli", year: "B23", src: `${bebekdengklek}`, desc: "Jollybee komunitasnya seru. Kamu bebas nge-cp (Competitive Programming) sesuka kamu. Kamu suka ngerjain soal? Kamu suka ngebuat soal? Kamu suka ngajar? Ayo sini. <br><br> Di Jollybee kamu bener\" bisa fokus dengan apa pun yang kamu mau kerjain. Buat lomba, kamu tinggal daftar dan lomba aja karena lomba udh dicariin, perjalanan ke venue lomba udah diurusin semua, biaya direimburse semua, dan kalo menang ada bonus tambahan dari Binus. Dan ini semua adalah default priviledgemu sebagai anggota tanpa harus bayar sepeser pun. <br><br> Terlebih, kamu juga sangat bebas berekspresi di sini. Nggak ada yang namanya hirarki, Jollybee itu benar-benar komunitas yang positif dan saling support."},
         {name: "Blankts", year: "B25", src: `${bebekdengklek}`, desc: "Jollybee itu komunitas yang ngubah rutinitas kuliahku yang awalnya cuman kupu-kupu (kuliah pulang-kuliah pulang) sekarang jadi ada tujuan selama berkuliah. Di Jollybee, kita benar-benar dibina untuk dapat meningkatkan kemampuan ebrpikir, berkomunikasi, dan kerja sama kita. Materi-materi dan latihan yang diberikan juga kualitasnya TOP deh. <br><br> Selain itu, di Jollybee kita juga bisa have fun bersama. Sesi board game, company visit, dan makan-makan bersama merupakan sesi paling menyenangkan buatku. Gak bakal nyesel deh join Jollybee."},
-        {name: "naga-unyu", year: "B26", src: `${bebekdengklek}`, desc: "Jollybee komunitasnya sangat asik, seru, dan relaxing. Tapi pada saat yang sama training dan komunitas ini sangat membangun dan memfasilitasi para anggotanya untuk berkembang ^_^"},
+        {name: "Naga-Unyu", year: "B26", src: `${bebekdengklek}`, desc: "Jollybee komunitasnya sangat asik, seru, dan relaxing. Tapi pada saat yang sama training dan komunitas ini sangat membangun dan memfasilitasi para anggotanya untuk berkembang ^_^"},
         {name: "Shiba", year: "B18", src: `${bebekdengklek}`, desc: "I asked myself a lot of \"What if ...\" questions. One of them is \"What if I didn't join Jollybee back then?\"<br><br> 1. I don't think I'll have the foundations necessary to pass the coding interview for working abroad. I wasn't a confident person as well and being srrounded by suppportive and amazing people boosted my confidence which helped me to better unlock my potentials. <br><br> 2. I wouldn't have traveled to many different places both abroad and cities within Indonesia. Jollybee was very generous in their funding for competitions. <br><br> And lastly, I wouldn't meet all my friends."},
     ]) 
     const swiperContainerRef = useRef(null);
@@ -41,6 +41,8 @@ const Slider = () => {
     }, []);
 
     return (
+        <div className="slider">
+
             <Swiper
             ref={swiperContainerRef}
             modules={[Navigation, Pagination, EffectCoverflow, Autoplay]}
@@ -49,7 +51,7 @@ const Slider = () => {
             centeredSlides={true}
             loop={true}
             watchOverflow={true}
-            slidesPerView="auto"
+            slidesPerView={1}
             spaceBetween={0}
             coverflowEffect={{
                 rotate: 0,
@@ -64,7 +66,14 @@ const Slider = () => {
             autoplay={{
                 delay: 5000,
             }}
-            className="swiper">
+            breakpoints={{
+                768: {
+                    slidesPerView: 2
+                },
+                900: {
+                    slidesPerView: "auto"
+                }
+            }}>
                 <div className="swiper__container">
                      
                     {testimonials.map((testimonial) => (
@@ -83,7 +92,8 @@ const Slider = () => {
                 </div>
 
         </Swiper>
-
+    
+    </div>
     )
 }
 

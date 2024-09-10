@@ -1,10 +1,13 @@
-import React, {useState} from 'react';
-import bebekcp from '../../assets/bebekcp.png';
+import React, { useState, useEffect } from 'react';
+import lebahcp from '../../assets/lebahcp.png';
+import lebahcp2 from '../../assets/lebahcp2.png';
+import lebahcp3 from '../../assets/lebahcp3.png';
 import CpBenefit from './cpBenefit/CpBenefit';
 import icpcwf from '../../assets/icpcwf.jpg';
 import JbBenefit from './jbBenefit/JbBenefit';
 import Slider from './Slider/Slider';
 import './benefits.css';
+import AdjustHeight from '../AdjustHeight';
 
 const Benefits = () => {
   const [cp, setCp] = useState([
@@ -28,12 +31,36 @@ const Benefits = () => {
     {name: "Routine outings", explain: "Go to various places with other Jollybee member to strengthen our bonding. We love to play badminton, have a tea time session, etc."},
     {name: "Vast connection", explain: "Vast connections with Jollybee alumni."},
   ]);
+  const [bannerImg, setBannerImg] = useState(lebahcp);
+
+  useEffect(() => {
+    const updateImage = () => {
+      if (window.innerWidth <= 576) {
+        setBannerImg(lebahcp3);
+      }
+      else if (window.innerWidth <= 1024) {
+        setBannerImg(lebahcp2);
+      }
+      else {
+        setBannerImg(lebahcp);
+      }
+    };
+
+    updateImage();
+    window.addEventListener('resize', updateImage);
+
+    return () => {
+      window.removeEventListener('resize', updateImage);
+    }
+  }, []);
+
 
   return (
     <div className='benefit'>
+      <AdjustHeight></AdjustHeight>
       <div className="benefit__banner">
-        <h1 className='banner__title greet'>Entering the World of Competitive Programming?</h1>
-        <img src={bebekcp} alt="" className="bebekcp"/>
+        <h1 className='banner__title'>Entering the World of Competitive Programming?</h1>
+        <img src={bannerImg} alt="" className="lebahcp"/>
         <img src={icpcwf} alt="" className="icpcwf"/>
       </div>
 
