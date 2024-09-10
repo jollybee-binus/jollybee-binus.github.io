@@ -98,7 +98,7 @@ const Learn = () => {
                 <span><b>Participate in live online contests</b>. We suggest trying <a href="https://atcoder.jp/contests/archive?ratedType=1&category=0&keyword=">Atcoder Beginner Contest</a>, <a href="https://codeforces.com/contests?type=div4">Codeforces Div. 4</a>, and <a href="https://codeforces.com/contests?type=div3">Codeforces Div. 3</a> for starters to experience how it feels to be in a real CP competition. We don't recommend doing this before you've finished <a href="https://tlx.toki.id/courses">TLX's introductory courses</a>. Here’s some of our online judges recommendations:</span>
                 <div className="oj-recommendations">
                 {ojs.map((oj) => (
-                  <div className="oj__container">
+                  <div className="oj__container" key={oj.name}>
                     <a href={oj.link}>
                       <img src={oj.src} alt="" />
                     </a>

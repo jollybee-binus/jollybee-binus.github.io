@@ -77,7 +77,7 @@ const Slider = () => {
                 <div className="swiper__container">
                      
                     {testimonials.map((testimonial) => (
-                        <SwiperSlide className="swiperslide">
+                        <SwiperSlide className="swiperslide" key={testimonial.name}>
                             <div className="swiper__header">
                                 <img src={testimonial.src} alt="" />
                                 <div className="swiper__identity">

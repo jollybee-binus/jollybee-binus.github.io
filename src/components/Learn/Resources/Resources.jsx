@@ -43,7 +43,7 @@ const Resources = () => {
             }}
             >
                 {materials.map((material) => (
-                    <SwiperSlide className="swiper-material">
+                    <SwiperSlide className="swiper-material" key={material.name}>
                         <a href={material.link}>
                             <div className="material__content">
                                 <img src={material.src} alt="" />
