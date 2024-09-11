@@ -33,6 +33,7 @@ const Resources = () => {
             autoplay={{
                 delay: 5000,
             }}
+            pauseOnMouseEnter={true}
             breakpoints={{
                 768: {
                     slidesPerView: 2

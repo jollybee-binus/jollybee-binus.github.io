@@ -21,8 +21,9 @@ const Register = () => {
   const [timelineImg, setTimelineImg] = useState(jejaklebah);
   const [faqImg, setFaqImg] = useState(lebahfaq);
   const [points, setPoints] = useState([
-    {name: "Selection Phase 1", date: "23 October 2024", desc: "Consisted of 20 problems (10 basic programming problems and 10 math problems), online (no proctoring), open for 48 hours."},
-    {name: "Selection Phase 2", date: "26-27 October 2024", desc: "Consisted of 6-10 competivive programming problems."},
+    {name: "Registration Deadline", date: "23 October 2024", desc: "The registration form will be closed in 23 October 2024 at 23.59 WIB."},
+    {name: "Selection Phase 1", date: "26-27 October 2024", desc: "Consisted of 20 problems (10 basic programming problems and 10 math problems), online (no proctoring), open for 48 hours."},
+    {name: "Selection Phase 2", date: "8 December 2024", desc: "Consisted of 6-10 competivive programming problems."},
     {name: "Announcement", date: "January 2025", desc: "Results of registrants that advanced to Jollybee Basic Training are announced."},
     {name: "Jollybee Basic Training", date: "February 2025", desc: "The beginning of the Jollybee Basic Training (even semester)."},
   ])

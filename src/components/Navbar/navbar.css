@@ -139,14 +139,13 @@
     }
 
     .links.open {
-        width: 25vw;
-        box-shadow: 0px 0 10px 10px var(--white);
+        width: calc(2 * var(--padding-lr) + 4rem);
     }
 
     .link {
         padding: 1rem var(--padding-lr);
         text-align: right;
-        width: 25vw;
+        width: calc(2 * var(--padding-lr) + 4rem);
         border-radius: 0;
         background-color: transparent;
         transform: translateX(100%);
@@ -177,11 +176,11 @@
 
 @media screen and (max-width: 768px) {
     .links.open {
-        width: 35vw;
+        width: calc(2 * var(--padding-lr) + 4rem);
     }
 
     .link {
-        width: 35vw;
+        width: calc(2 * var(--padding-lr) + 4rem);
     }
 }
 
@@ -199,10 +198,10 @@
     }
 
     .links.open {
-        width: 45vw;
+        width: calc(2 * var(--padding-lr) + 4rem);
     }
 
     .link {
-        width: 45vw;
+        width: calc(2 * var(--padding-lr) + 4rem);
     }
 }

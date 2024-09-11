@@ -18,7 +18,7 @@
     position: absolute;
     left: -13rem;
     top: 2rem;
-    height: 80vh;
+    height: calc(var(--vh, 1vh) * 80);
     z-index: -10;
 }
 
@@ -26,7 +26,7 @@
     position: absolute;
     right: -8.7rem;
     bottom: -2rem;
-    height: 80vh;
+    height: calc(var(--vh, 1vh) * 80);
     z-index: -10;
 }
 
@@ -119,7 +119,6 @@
 
     .photos__left {
         left: -10rem;
-        height: 80vh;
     }
     
     .photos__right {
@@ -138,19 +137,17 @@
 
     .photos__left,
     .photos__right {
-        height: 70vh;
+        height: calc(var(--vh, 1vh) * 70);
         object-fit: cover;
         overflow: visible;
     }
 
     .photos__left {
         left: -10rem;
-        height: 70vh;
     }
     
     .photos__right {
         right: -10rem;
-        height: 70vh;
         bottom: -1rem;
     }
 }
