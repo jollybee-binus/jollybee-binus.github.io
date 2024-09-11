@@ -8,12 +8,8 @@ const AdjustHeight = () => {
 
     useEffect(() => {
         adjustHeight();
-        window.addEventListener('resize', adjustHeight);
-
-        return () => {
-            window.removeEventListener('resize', adjustHeight);
-        };
     }, []);
+    
     return null;
 }
 
