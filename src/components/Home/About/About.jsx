@@ -17,7 +17,7 @@ const About = () => {
     const [socials, setSocials] = useState([
         {name: "Instagram", link: "https://www.instagram.com/binusjollybee/"},
         {name: "Linkedin", link: "https://www.linkedin.com/company/jollybee-binus/"}
-    ])
+    ]);
 
     return (
         <div className="about section">
@@ -33,7 +33,7 @@ const About = () => {
                         Competitions are supported by various companies such as 
                         {companies.map((company) => (
                             <span key={company.name}>
-                                <a href={company.link}>{company.name}</a>, 
+                                <a href={company.link} target="_blank">{company.name}</a>, 
                             </span>
                         ))}
                         and others.
@@ -54,13 +54,17 @@ const About = () => {
                             
                             <div className="links-container">
                                 Please visit our 
-                                {socials.map((social) => (
+                                    {socials.map((social, index) => (
                                     <span key={social.name}>
-                                        <a href={social.link}>{social.name}</a>
-                                        , 
-                                    </span>   
+                                        <a href={social.link}>
+                                            {social.name}
+                                        </a>
+                                        {(index < socials.length - 1 && socials.length > 2) ? ', ' : ''}
+                                        {(index < socials.length - 1 && socials.length === 2) ? ' ' : ''}
+                                        {(index === socials.length - 2) ? 'and ' : ''}
+                                    </span>
                                 ))}
-                                for further information.
+                                 for further information.
                             </div>
                         </span>
                     </div>

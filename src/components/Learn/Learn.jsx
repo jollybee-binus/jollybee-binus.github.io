@@ -15,7 +15,7 @@ const Learn = () => {
   const [ojs, setOjs] = useState([
     {name: "Codeforces", src: `${cf_logo}`, link: "https://codeforces.com/"},
     {name: "Atcoder", src: `${atcoder_logo}`, link: "https://atcoder.jp/"},
-    {name: "TLX", src: `${tlx_logo}`, link: "https://codeforces.com/"}
+    {name: "TLX", src: `${tlx_logo}`, link: "https://tlx.toki.id/"}
   ]);
   const [backgroundImage, setBackgroundImage] = useState(jalansetapak);
 
@@ -72,11 +72,11 @@ const Learn = () => {
           <div className="learn__start-for">
             <div className="for-content tilt">
               <h3>For beginner</h3>
-              <span>For newcomers with no coding experience, we recommend learning from the <a href="https://tlx.toki.id/courses/basic-cpp">TLX basic programming courses</a> prepared by TOKI (Tim Olimpiade  Komputer Indonesia).</span>
+              <span>For newcomers with no coding experience, we recommend learning from the <a href="https://tlx.toki.id/courses/basic-cpp" target="_blank">TLX basic programming courses</a> prepared by TOKI (Tim Olimpiade  Komputer Indonesia).</span>
             </div>
             <div className="for-content tilt">
               <h3>For experienced</h3>
-              <span>If you already have experience in CP, we recommend you to try their <a href="https://tlx.toki.id/courses/competitive">basic CP courses</a> for more challenging topics.</span>
+              <span>If you already have experience in CP, we recommend you to try their <a href="https://tlx.toki.id/courses/competitive" target="_blank">basic CP courses</a> for more challenging topics.</span>
             </div>
           </div> 
         </div>
@@ -95,14 +95,14 @@ const Learn = () => {
               <h1 className='section__title'>Spice it up with online judges</h1>
 
               <div className="learn__oj-main-text">
-                <span><b>Participate in live online contests</b>. We suggest trying <a href="https://atcoder.jp/contests/archive?ratedType=1&category=0&keyword=">Atcoder Beginner Contest</a>, <a href="https://codeforces.com/contests?type=div4">Codeforces Div. 4</a>, and <a href="https://codeforces.com/contests?type=div3">Codeforces Div. 3</a> for starters to experience how it feels to be in a real CP competition. We don't recommend doing this before you've finished <a href="https://tlx.toki.id/courses">TLX's introductory courses</a>. Here’s some of our online judges recommendations:</span>
+                <span><b>Participate in live online contests</b>. We suggest trying <a href="https://atcoder.jp/contests/archive?ratedType=1&category=0&keyword=" target="_blank">Atcoder Beginner Contest</a>, <a href="https://codeforces.com/contests?type=div4" target="_blank"> Codeforces Div. 4</a>, and <a href="https://codeforces.com/contests?type=div3" target="_blank">Codeforces Div. 3</a> for starters to experience how it feels to be in a real CP competition. We don't recommend doing this before you've finished <a href="https://tlx.toki.id/courses" target="_blank">TLX's introductory courses</a>. Here’s some of our online judges recommendations:</span>
                 <div className="oj-recommendations">
                 {ojs.map((oj) => (
                   <div className="oj__container" key={oj.name}>
-                    <a href={oj.link}>
+                    <a href={oj.link} target="_blank">
                       <img src={oj.src} alt="" />
                     </a>
-                    <a href={oj.link}>
+                    <a href={oj.link} target="_blank">
                       <span>{oj.name}</span>
                     </a>
                   </div>
@@ -124,7 +124,7 @@ const Learn = () => {
           <div className="learn__important-text">
             <h3>One last thing</h3>
             <h1 className='greet practice__cp'><i>Practice, practice, practice</i></h1>
-            <span>Please watch <a href="https://www.youtube.com/watch?v=xAeiXy8-9Y8">How to start Competitive Programming? For beginners!</a> by Errichto.</span>
+            <span>Please watch <a href="https://www.youtube.com/watch?v=xAeiXy8-9Y8" target="_blank">How to start Competitive Programming? For beginners!</a> by Errichto.</span>
             <span>If you keep Errichto's advice in mind and practice diligently, you should be able to improve fast.</span>
           </div>
           <img src={kanan_panah} alt="" />
