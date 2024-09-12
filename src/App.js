@@ -11,7 +11,7 @@ import {HashRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
   return (
-    <Router basename="/Jollybee-Website">
+    <Router>
       <div className="App">
         <Navbar></Navbar>
 
