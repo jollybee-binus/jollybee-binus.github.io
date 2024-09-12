@@ -148,7 +148,7 @@
         width: calc(2 * var(--padding-lr) + 4rem);
         border-radius: 0;
         background-color: transparent;
-        transform: translateX(150%);
+        transform: translateX(100%);
         transition: 0.8s cubic-bezier(0.19, 1, 0.22, 1);
     }
 
@@ -160,9 +160,13 @@
         margin-top: 5rem;
     }
 
-    .link:hover,
     .link.active {
-        background: linear-gradient(90deg, var(--white) 80%, var(--light-gray) 100%);
+        background-color: transparent;
+    }
+
+    .link:hover,
+    .link.open.active {
+        background: var(--light-gray);
     }
 
     .background__wrapper.open {
