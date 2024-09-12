@@ -148,7 +148,7 @@
         width: calc(2 * var(--padding-lr) + 4rem);
         border-radius: 0;
         background-color: transparent;
-        transform: translateX(130%);
+        transform: translateX(100%);
         transition: 0.8s cubic-bezier(0.19, 1, 0.22, 1);
     }
 
@@ -160,13 +160,36 @@
         margin-top: 5rem;
     }
 
-    .link.active {
-        background-color: transparent;
+    @keyframes activeNavbarOpen {
+        0% {
+            background-color: transparent;
+        }
+        100% {
+            background-color: var(--light-gray);
+        }
     }
 
-    .link:hover,
-    .link.open.active {
+    @keyframes activeNavbarClose {
+        0% {
+            background-color: var(--light-gray);
+        }
+        100% {
+            background-color: transparent;
+        }
+    }
+
+    .link:hover {
         background: var(--light-gray);
+    }
+
+    .link.open.active {
+        animation: 1.2s activeNavbarOpen;
+        background-color: var(--light-gray);
+    }
+
+    .link.active {
+        animation: 1.2s activeNavbarClose;
+        background-color: transparent;
     }
 
     .background__wrapper.open {
