@@ -148,8 +148,8 @@
         width: calc(2 * var(--padding-lr) + 4rem);
         border-radius: 0;
         background-color: transparent;
-        transform: translateX(100%);
-        transition: 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+        transform: translateX(150%);
+        transition: 0.8s cubic-bezier(0.19, 1, 0.22, 1);
     }
 
     .link.open {
@@ -160,7 +160,8 @@
         margin-top: 5rem;
     }
 
-    .link:hover {
+    .link:hover,
+    .link.active {
         background: linear-gradient(90deg, var(--white) 80%, var(--light-gray) 100%);
     }
 

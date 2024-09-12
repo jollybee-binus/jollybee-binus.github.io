@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './navbar.css';
 import JollybeeLogo from '../../assets/jollybeelogo.png';
 import ScrollTop from '../ScrollTop.jsx';
@@ -7,6 +7,7 @@ import ScrollTop from '../ScrollTop.jsx';
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [burgerOpen, setBurgerOpen] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -34,7 +35,7 @@ const Navbar = () => {
         setBurgerOpen(!burgerOpen);
     }
 
-
+    const isActive = (path) => location.pathname === path ? 'active' : '';
 
     return (
         <div className={navbar}>
@@ -51,10 +52,10 @@ const Navbar = () => {
                 <div className={`burger__bar ${burgerOpen ? 'open' : ''}`}></div>
             </div>
             <div className={`links ${burgerOpen ? 'open' : ''}`} onClick={burgerClick}>
-                <Link to="/" className={`link ${burgerOpen ? 'open' : ''}`}>Home</Link>
-                <Link to="/learn" className={`link ${burgerOpen ? 'open' : ''}`}>Learn</Link>
-                <Link to="/benefits" className={`link ${burgerOpen ? 'open' : ''}`}>Benefits</Link>
-                <Link to="/register" className={`link ${burgerOpen ? 'open' : ''}`}>Register</Link>
+                <Link to="/" className={`link ${burgerOpen ? 'open' : ''} ${isActive('/')}`}>Home</Link>
+                <Link to="/learn" className={`link ${burgerOpen ? 'open' : ''} ${isActive('/learn')}`}>Learn</Link>
+                <Link to="/benefits" className={`link ${burgerOpen ? 'open' : ''} ${isActive('/benefits')}`}>Benefits</Link>
+                <Link to="/register" className={`link ${burgerOpen ? 'open' : ''} ${isActive('/register')}`}>Register</Link>
             </div>
 
             <div className={`background__wrapper ${burgerOpen ? 'open' : ''}`} onClick={burgerClick}>
