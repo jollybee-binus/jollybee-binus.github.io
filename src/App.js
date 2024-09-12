@@ -7,7 +7,7 @@ import Learn from './components/Learn/Learn';
 import Benefits from './components/Benefits/Benefits';
 import Register from './components/Register/Register';
 import NotFound from './components/NotFound/NotFound';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {HashRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
   return (
