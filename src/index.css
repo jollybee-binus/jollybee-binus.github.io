@@ -1,0 +1,308 @@
+/* === Google Fonts === */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.nunito-light {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.nunito-regular {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nunito-medium {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.nunito-semibold {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.nunito-bold {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* === Variable CSS ==== */
+:root {
+  /* === Colors === */
+  /* Color mode HSL */
+  --white: #F2F2F2;
+  --dark: #3B3936;
+  --gray: #504E4B;
+  
+  --text: #f2f2f2;
+  --background: #3a3836;
+  --primary: #fcad36;
+  --secondary: #fdce68;
+
+  --accent: #e3d4ba;
+  --medium-accent: #916a3d;
+  --dark-accent: #62432c;
+
+  --yellow-light: #F0E5CC;
+  --yellow-yolk: #FFDF9A;
+  --choco: #A39887;
+  --gray: #888581;
+  --light-gray: #e7e4e2;
+}
+
+:root {
+  /* === Font and Typography */
+  --body-font: "Nunito", sans-serif;
+  --title-font: "Poppins", sans-serif;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.25rem;
+  --extralg-font-size: 4rem;
+  --large-font-size: 1.1rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --xsmall-font-size: 0.813rem;
+  --greet-font-size: 5rem;
+
+  /* === Font weight === */
+  --font-medium:500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* === Box shadow === */
+  --shadow: 0px 5px 20px 0px var(--white);
+
+  /* === Border radius === */
+  --border-radius: 20px;
+
+  /* === Padding === */
+  --padding-lr: 8rem;
+  --padding-tb: 6rem;
+
+  /* === Margin === */
+  --margin-title-bottom: 1.5rem;
+
+  /* === Gap between text container === */
+  --text-container-gap: 1rem;
+}
+
+/* === Responsive typography === */
+@media screen and (max-width: 1024px) {
+  :root {
+    --greet-font-size: 3.2rem;
+    --h1-font-size: 2.2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.1rem;
+    --extralg-font-size: 3rem;
+    --large-font-size: 1rem;
+    --normal-font-size: 0.935rem;
+    --small-font-size: 0.813rem;
+    --xsmall-font-size: 0.75rem;
+    
+    --padding-lr: 4rem;
+    --padding-tb: 3.8rem;
+    --margin-title-bottom: 1.35rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --greet-font-size: 2.8rem;
+    --h1-font-size: 1.95rem;
+    --h2-font-size: 1.35rem;
+    --h3-font-size: 1rem;
+    --extralg-font-size: 2.75rem;
+    --large-font-size: 0.9rem;
+    --normal-font-size: 0.935rem;
+    --small-font-size: 0.813rem;
+    --xsmall-font-size: 0.75rem;
+
+    --padding-lr: 4rem;
+    --padding-tb: 3.2rem;
+    --margin-title-bottom: 1.1rem;
+    --text-container-gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+    --greet-font-size: 2.25rem;
+    --h1-font-size: 1.7rem;
+    --h2-font-size: 1.15rem;
+    --h3-font-size: 1rem;
+    --extralg-font-size: 2.2rem;
+    --large-font-size: 0.85rem;
+    --normal-font-size: 0.935rem;
+    --small-font-size: 0.813rem;
+    --xsmall-font-size: 0.75rem;
+
+    --padding-lr: 2.8rem;
+    --padding-tb: 2.95rem;
+    --margin-title-bottom: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --padding-lr: 2.5rem;
+    --padding-tb: 2.85rem;
+    --margin-title-bottom: 0.75rem;
+  }
+}
+
+
+/* === Base ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--white);
+  line-height: 1.4rem;
+}
+
+h1, h2, h3 {
+  font-family: var(--title-font);
+  font-weight: var(--font-semibold);
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+li {
+  margin-bottom: 0.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height:auto;
+  vertical-align: middle;
+}
+
+/* === Reusable CSS Classes */
+.component {
+  margin-top: 4rem;
+  position: relative;
+}
+
+.container {
+  max-width: 1080px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.section { 
+  padding: var(--padding-tb) var(--padding-lr);
+} 
+
+.section__title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  position: relative;
+  margin-bottom: var(--margin-title-bottom);
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  line-height: 1;
+  border-radius: 0.5rem;
+  display: inline-block;
+  font-weight: var(--font-semibold);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-10px);
+}
+
+.greet {
+  font-size: var(--greet-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.links-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--text-container-gap);
+}

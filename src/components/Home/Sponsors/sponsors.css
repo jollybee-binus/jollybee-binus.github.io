@@ -1,0 +1,28 @@
+.sponsors {
+    background-color: var(--white);
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsors-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sponsors-list img {
+    width: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .sponsors-list img {
+        width: 6.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sponsors-list img {
+        width: 6rem;
+    }
+}

@@ -1,0 +1,94 @@
+.alumni {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alumni span,
+.alumni div {
+    color: var(--white);
+}
+
+.alumni .alumni__highlight {
+    color: var(--primary);
+}
+
+.alumni .text-container {
+    width: 70%;
+}
+
+.alumni .links-container {
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+}
+
+.alumni .links-container span {
+    display: inline-block;
+}
+
+.lebahalumni {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+}
+
+.lebahalumni img {
+    flex-shrink: 0;
+}
+
+.lebahwork {
+    height: 12rem;
+}
+
+.lebahresearch {
+    height: 10rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .lebahwork {
+        height: 11rem;
+    }
+    
+    .lebahresearch {
+        height: 9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lebahwork {
+        height: 8rem;
+    }
+    
+    .lebahresearch {
+        height: 7rem;
+    }
+
+    .alumni .text-container {
+        width: 85%;
+    }
+
+    .lebahalumni {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .lebahwork {
+        height: 6.5rem;
+    }
+    
+    .lebahresearch {
+        height: 5.5rem;
+    }
+
+    .alumni .text-container {
+        width: 100%;
+    }
+
+    .lebahalumni {
+        gap: 2rem;
+    }
+}

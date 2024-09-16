@@ -1,0 +1,153 @@
+.banner {
+    position: relative;
+    overflow: hidden;
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+.header {
+    height: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 6rem;
+}
+
+.photos__left {
+    position: absolute;
+    left: -13rem;
+    top: 2rem;
+    height: calc(var(--vh, 1vh) * 80);
+    z-index: -10;
+}
+
+.photos__right {
+    position: absolute;
+    right: -8.7rem;
+    bottom: -2rem;
+    height: calc(var(--vh, 1vh) * 80);
+    z-index: -10;
+}
+
+.photos__center {
+    visibility: hidden;
+}
+
+.home .desc {
+    font-size: var(--h3-font-size);
+    color: var(--white);
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 0px var(--white);
+    }
+    30% {
+        margin-top: 0.5rem;
+    }
+    50% {
+        box-shadow: 0 0 5px var(--white);
+        margin-top: 0.8rem;
+    }
+    70% {
+        box-shadow: 0 0 10px var(--white);
+        margin-top: 1rem;
+    }
+}
+
+.banner .jollybee_logo {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    max-width: 3rem;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+
+.home .dropdown-icon {
+    margin-top: 0.8rem;
+}
+
+
+.home .dropdown-icon span {
+    display: inline-block;
+    position: absolute;
+    width: calc(50% * 1.25);
+    height: 3px;
+    background-color: var(--white);
+    border-radius: 2px;
+    animation: glow 2s infinite ease-in-out;
+}
+
+.home .dropdown-icon span:nth-child(1) {
+    transform: rotate(45deg);
+    left: 0;
+}
+
+.home .dropdown-icon span:nth-child(2) {
+    transform: rotate(-45deg);
+    right: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+
+    .banner .jollybee_logo {
+        width: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .banner .jollybee_logo {
+        width: 2.5rem;
+    }
+
+    .photos__left {
+        left: -10rem;
+    }
+    
+    .photos__right {
+        right: -7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .banner .jollybee_logo {
+        width: 2.2rem;
+    }
+
+    .photos__left,
+    .photos__right {
+        height: calc(var(--vh, 1vh) * 70);
+        object-fit: cover;
+        overflow: visible;
+    }
+
+    .photos__left {
+        left: -10rem;
+    }
+    
+    .photos__right {
+        right: -10rem;
+        bottom: -1rem;
+    }
+}
