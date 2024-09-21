@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import './about.css';
-import hexagon from '../../../assets/hexagon.png';
 
 const About = () => {
     const [companies, setCompanies] = useState([

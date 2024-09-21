@@ -4,7 +4,6 @@ import VanillaTilt from 'vanilla-tilt';
 import Faq from './Faq/Faq';
 import Timeline from './Timeline/Timeline';
 import './register.css';
-import hexagon from '../../assets/hexagon.png';
 import hexagon1 from '../../assets/hexagon1.png';
 import hexagon2 from '../../assets/hexagon2.png';
 import hexagon3 from '../../assets/hexagon3.png';
@@ -14,7 +13,6 @@ import poinlebah from '../../assets/poinlebah.png';
 import jejaklebahvertikal from '../../assets/jejaklebahvertikal.png';
 import jejaklebahvertikal2 from '../../assets/jejaklebahvertikal2.png';
 import lebahfaq from '../../assets/lebahfaq.png';
-import lebahfaq2 from '../../assets/lebahfaq2.png';
 import lebahfaqrev from '../../assets/lebahfaqrev.png';
 
 const Register = () => {
@@ -26,11 +24,21 @@ const Register = () => {
     {name: "Selection Phase 2", date: "8 December 2024", desc: "Consisted of 6-10 competivive programming problems."},
     {name: "Announcement", date: "January 2025", desc: "Results of registrants that advanced to Jollybee Basic Training are announced."},
     {name: "Jollybee Basic Training", date: "February 2025", desc: "The beginning of the Jollybee Basic Training (even semester)."},
-  ])
+  ]);
+
+  const scrollToNotice = () => {
+    const noticeSection = document.getElementById('notice__section');
+    if (noticeSection) {
+      noticeSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      console.error("The element with id 'notice__section' was not found.");
+    }
+  };
+
   const [questions, setQuestions] = useState([
     {question: "Can non-compsci students join Jollybee?", answer: (
       <>
-        Yes! Everyone is welcomed to join Jollybee, read the <a href="#notice">Notice section</a> for more information.
+        Yes! Everyone is welcomed to join Jollybee, read the <a onClick={scrollToNotice}>Notice section</a> for more information.
       </>
     )},
     {question: "What's the material for the selection phases?", answer: (
@@ -48,14 +56,7 @@ const Register = () => {
     {question: "Can I join Jollybee and still participate in other organizations?", answer: "Yes, as long as you have a good time management and willing to commit in participating Jollybee's events."}
   ]);
 
-  const scrollToNotice = () => {
-    const noticeSection = document.getElementById('register__cards');
-    if (noticeSection) {
-      noticeSection.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      console.error("The element with id 'register__cards' was not found.");
-    }
-};
+  
   
   useEffect(() => {
     const tiltElements = document.querySelectorAll('.info__card');
@@ -119,7 +120,7 @@ const Register = () => {
       <img src={hexagon1} alt="" className="hexagon1"/>
       <img src={hexagon2} alt="" className="hexagon2"/>
       <img src={hexagon3} alt="" className="hexagon3"/>
-      <div className="register__hello section" id="notice">
+      <div className="register__hello section" id="notice__section">
         <h1 className="greet register__greet">Hello Candidate!</h1>
         <span>Interested in challenging yourself with fascinating problems? 
         </span>
@@ -133,7 +134,7 @@ const Register = () => {
           <button className="btn btn__discord" onClick={handleRedirectJoin}>Join Discord</button>
         </div>
 
-        <div className="register__cards">
+        <div className="register__cards"> 
           <div className="info__card tilt">
             <h2>Notice</h2>
             <p>Please join our Discord server after registration. All announcements will be shared on the server.</p>
