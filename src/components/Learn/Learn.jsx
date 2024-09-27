@@ -3,20 +3,14 @@ import Resources from './Resources/Resources';
 import jalansetapak from '../../assets/jalansetapak.png';
 import jalansetapak2 from '../../assets/jalansetapak2.png';
 import jalansetapak3 from '../../assets/jalansetapak3.png';
-import cf_logo from '../../assets/cf_logo.png';
-import atcoder_logo from '../../assets/atcoder_logo.png';
-import tlx_logo from '../../assets/tlx_logo.png';
 import kiri_panah from '../../assets/kiri_panah.png';
 import kanan_panah from '../../assets/kanan_panah.png';
 import './learn.css';
 import VanillaTilt from 'vanilla-tilt';
+import { ojList } from '../data';
 
 const Learn = () => {
-  const [ojs, setOjs] = useState([
-    {name: "Codeforces", src: `${cf_logo}`, link: "https://codeforces.com/"},
-    {name: "Atcoder", src: `${atcoder_logo}`, link: "https://atcoder.jp/"},
-    {name: "TLX", src: `${tlx_logo}`, link: "https://tlx.toki.id/"}
-  ]);
+  const [ojs, setOjs] = useState(ojList);
   const [backgroundImage, setBackgroundImage] = useState(jalansetapak);
 
   useEffect(() => {

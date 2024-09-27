@@ -1,22 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
 import './about.css';
+import { companyListAbout, socialList } from '../../data'; 
 
 const About = () => {
-    const [companies, setCompanies] = useState([
-        {name: "Huawei", link: "https://www.huawei.com/minisite/icpc2024/en/"},
-        {name: "Google", link: "https://codingcompetitionsonair.withgoogle.com/"},
-        {name: "Meta", link: "https://www.facebook.com/codingcompetitions/hacker-cup"},
-        {name: "Shopee", link: "https://careers.shopee.sg/codeleague/"},
-        {name: "Codegoda", link: "https://codegoda.io/"},
-        {name: "Acer", link: "https://news.acer.com/acer-sponsors-the-international-olympiad-in-informatics-2022"},
-        {name: "Traveloka", link: "https://competition.binus.ac.id/icpc2018/"},
-        {name: "Sirclo", link: "http://ngoding-seru.jonathanirvin.gs/"},
-    ]);
-    const [socials, setSocials] = useState([
-        {name: "Instagram", link: "https://www.instagram.com/binusjollybee/"},
-        {name: "Linkedin", link: "https://www.linkedin.com/company/jollybee-binus/"}
-    ]);
+    const [companies, setCompanies] = useState(companyListAbout);
+    const [socials, setSocials] = useState(socialList);
 
     return (
         <div className="about section">

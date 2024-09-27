@@ -1,28 +1,12 @@
 import React, { useState } from 'react';
 import './alumni.css';
+import { companyListAlumni, universityList } from '../../data';
 import lebahresearch from '../../../assets/lebahresearch.png';
 import lebahwork from '../../../assets/lebahwork.png';
 
 const Alumni = () => {
-    const [companies, setCompanies] = useState([
-        {name: "Shopee"},
-        {name: "Google"},
-        {name: "Amazon"},
-        {name: "Meta"},
-        {name: "Talentium"},
-        {name: "Samsung"},
-        {name: "Grab"},
-        {name: "Tiket.com"},
-        {name: "Traveloka"},
-        {name: "Tokopedia"},
-        {name: "Sirclo"},
-        {name: "Blibli"},
-    ]);
-    const [universities, setUniversities] = useState([
-        {name: "National University of Singapore"},
-        {name: "University of Tsukuba"},
-        {name: "Binus University"}
-    ]);
+    const [companies, setCompanies] = useState(companyListAlumni);
+    const [universities, setUniversities] = useState(universityList);
 
     const renderLink = (array) => {
         return array.map((item, index) => (
@@ -44,8 +28,8 @@ const Alumni = () => {
             <div className="text-container">
                 <div className="links-container">
                     Competitive Programming has shaped the mindset of our members, refining them into the best version of themselves. Due to their own efforts, some of the companies of our alumni are 
-                    {companies.map((item, index) => (
-                        <span key={item.name}>
+                    {companies.forEach((item) => (
+                        <span>
                             <span className="alumni__highlight">
                                 {item.name}
                             </span>, 
