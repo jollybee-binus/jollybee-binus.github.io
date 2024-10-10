@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import huawei_logo from '../../../assets/huawei_logo.png';
 import './sponsors.css';
 
 const Sponsors = () => {
     const [sponsors, setSponsors] = useState([
-        {name: "Huawei", img: `${huawei_logo}`}
+        {name: "Huawei", img: process.env.PUBLIC_URL + "/assets/huawei_logo.png"}
     ])
   return (
     <div className="sponsors section">

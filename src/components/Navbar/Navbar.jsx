@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './navbar.css';
-import JollybeeLogo from '../../assets/jollybeelogo.png';
 import ScrollTop from '../ScrollTop.jsx';
 
 const Navbar = () => {
@@ -42,7 +41,7 @@ const Navbar = () => {
             <ScrollTop></ScrollTop>
             {/* logo */}
             <Link to="/">
-                <img src={JollybeeLogo} alt="JB Logo" className='logo'></img>
+                <img src={process.env.PUBLIC_URL + '/assets/jollybeelogo.png'} alt="JB Logo" className='logo'></img>
             </Link>
 
             {/* menu list */}

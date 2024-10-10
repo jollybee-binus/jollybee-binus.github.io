@@ -1,30 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import lebahcp from '../../assets/lebahcp.png';
-import lebahcp2 from '../../assets/lebahcp2.png';
-import lebahcp3 from '../../assets/lebahcp3.png';
+import './benefits.css';
 import CpBenefit from './cpBenefit/CpBenefit';
-import icpcwf from '../../assets/icpcwf.jpg';
 import JbBenefit from './jbBenefit/JbBenefit';
 import Slider from './Slider/Slider';
-import './benefits.css';
 import AdjustHeight from '../AdjustHeight';
 import { jbBenefitList, cpBenefitList } from '../data';
 
 const Benefits = () => {
   const [cp, setCp] = useState(cpBenefitList);
   const [jb, setJb] = useState(jbBenefitList);
-  const [bannerImg, setBannerImg] = useState(lebahcp);
+  const [bannerImg, setBannerImg] = useState(process.env.PUBLIC_URL + "/assets/lebahcp.png");
 
   useEffect(() => {
     const updateImage = () => {
       if (window.innerWidth <= 576) {
-        setBannerImg(lebahcp3);
+        setBannerImg(process.env.PUBLIC_URL + "/assets/lebahcp3.png");
       }
       else if (window.innerWidth <= 1024) {
-        setBannerImg(lebahcp2);
+        setBannerImg(process.env.PUBLIC_URL + "/assets/lebahcp2.png");
       }
       else {
-        setBannerImg(lebahcp);
+        setBannerImg(process.env.PUBLIC_URL + "/assets/lebahcp.png");
       }
     };
 
@@ -43,7 +39,7 @@ const Benefits = () => {
       <div className="benefit__banner">
         <h1 className='banner__title'>Entering the World of Competitive Programming?</h1>
         <img src={bannerImg} alt="" className="lebahcp"/>
-        <img src={icpcwf} alt="" className="icpcwf"/>
+        <img src={process.env.PUBLIC_URL + "/assets/icpcwf.jpg"} alt="" className="icpcwf"/>
       </div>
 
       <div className="why__cp section">

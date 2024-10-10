@@ -1,6 +1,5 @@
 import React from 'react';
 import './timeline.css';
-import poinlebah from '../../../assets/poinlebah.png';
 
 const Timeline = ({point}) => {
   return (

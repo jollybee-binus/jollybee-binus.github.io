@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './alumni.css';
 import { companyListAlumni, universityList } from '../../data';
-import lebahresearch from '../../../assets/lebahresearch.png';
-import lebahwork from '../../../assets/lebahwork.png';
 
 const Alumni = () => {
     const [companies, setCompanies] = useState(companyListAlumni);
@@ -28,7 +26,7 @@ const Alumni = () => {
             <div className="text-container">
                 <div className="links-container">
                     Competitive Programming has shaped the mindset of our members, refining them into the best version of themselves. Due to their own efforts, some of the companies of our alumni are 
-                    {companies.forEach((item) => (
+                    {companies.map((item) => (
                         <span>
                             <span className="alumni__highlight">
                                 {item.name}
@@ -44,8 +42,8 @@ const Alumni = () => {
             </div>
 
             <div className="lebahalumni">
-                <img src={lebahwork} alt="" className="lebahwork"/>
-                <img src={lebahresearch} alt="" className="lebahresearch"/>
+                <img src={process.env.PUBLIC_URL + "/assets/lebahwork.png"} alt="" className="lebahwork"/>
+                <img src={process.env.PUBLIC_URL + "/assets/lebahresearch.png"} alt="" className="lebahresearch"/>
             </div>
         </div>
     )

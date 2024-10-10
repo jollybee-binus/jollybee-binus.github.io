@@ -4,21 +4,11 @@ import VanillaTilt from 'vanilla-tilt';
 import Faq from './Faq/Faq';
 import Timeline from './Timeline/Timeline';
 import './register.css';
-import hexagon1 from '../../assets/hexagon1.png';
-import hexagon2 from '../../assets/hexagon2.png';
-import hexagon3 from '../../assets/hexagon3.png';
-import lingkaran from '../../assets/lingkaran.png';
-import jejaklebah from '../../assets/jejaklebah.png';
-import poinlebah from '../../assets/poinlebah.png';
-import jejaklebahvertikal from '../../assets/jejaklebahvertikal.png';
-import jejaklebahvertikal2 from '../../assets/jejaklebahvertikal2.png';
-import lebahfaq from '../../assets/lebahfaq.png';
-import lebahfaqrev from '../../assets/lebahfaqrev.png';
 import { pointList, questionList } from '../data';
 
 const Register = () => {
-  const [timelineImg, setTimelineImg] = useState(jejaklebah);
-  const [faqImg, setFaqImg] = useState(lebahfaq);
+  const [timelineImg, setTimelineImg] = useState(process.env.PUBLIC_URL + "/assets/jejaklebah.png");
+  const [faqImg, setFaqImg] = useState(process.env.PUBLIC_URL + "/assets/lebahfaq.png");
   const [points, setPoints] = useState(pointList);
   const [questions, setQuestions] = useState(questionList);
 
@@ -48,20 +38,20 @@ const Register = () => {
   useEffect(() => {
     const updateImage = () => {
       if (window.innerWidth <= 576) {
-        setTimelineImg(jejaklebahvertikal2);
+        setTimelineImg(process.env.PUBLIC_URL + "/assets/jejaklebahvertikal2.png");
       }
       else if (window.innerWidth <= 1024) {
-        setTimelineImg(jejaklebahvertikal);
+        setTimelineImg(process.env.PUBLIC_URL + "/assets/jejaklebahvertikal.png");
       }
       else {
-        setTimelineImg(jejaklebah);
+        setTimelineImg(process.env.PUBLIC_URL + "/assets/jejaklebah.png");
       }
 
       if(window.innerWidth <= 768) {
-        setFaqImg(lebahfaqrev);
+        setFaqImg(process.env.PUBLIC_URL + "/assets/lebahfaqrev.png");
       }
       else {
-        setFaqImg(lebahfaq);
+        setFaqImg(process.env.PUBLIC_URL + "/assets/lebahfaq.png");
       }
     };
 
@@ -83,16 +73,16 @@ const Register = () => {
 
   return (
     <div className="register component">
-      <img src={hexagon1} alt="" className="hexagon1"/>
-      <img src={hexagon2} alt="" className="hexagon2"/>
-      <img src={hexagon3} alt="" className="hexagon3"/>
+      <img src={process.env.PUBLIC_URL + "/assets/hexagon1.png"} alt="" className="hexagon1"/>
+      <img src={process.env.PUBLIC_URL + "/assets/hexagon2.png"} alt="" className="hexagon2"/>
+      <img src={process.env.PUBLIC_URL + "/assets/hexagon3.png"} alt="" className="hexagon3"/>
       <div className="register__hello section" id="notice__section">
         <h1 className="greet register__greet">Hello Candidate!</h1>
         <span>Interested in challenging yourself with fascinating problems? 
         </span>
         <span className="joinUs__container">
           <span>   Join us!   </span>
-          <img src={lingkaran} alt="" className="lingkaran" />
+          <img src={process.env.PUBLIC_URL + "/assets/lingkaran.png"} alt="" className="lingkaran" />
         </span>
 
         <div className="register__buttons">
@@ -128,7 +118,7 @@ const Register = () => {
               {points.map(
                 (point) => (
                   <div className="poinlebah__wrapper">
-                    <img src={poinlebah} alt=""/>
+                    <img src={process.env.PUBLIC_URL + "/assets/poinlebah.png"} alt=""/>
                   </div>
                 )
               )}

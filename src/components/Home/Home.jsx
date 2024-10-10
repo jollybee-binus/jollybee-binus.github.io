@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react';
 import './home.css';
-import photos_left from '../../assets/photos_left.png';
-import photos_right from '../../assets/photos_right.png';
-import jollybee_logo from '../../assets/jollybeelogo.png';
 import About from './About/About';
 import Join from './Join/Join';
 import Alumni from './Alumni/Alumni';
@@ -29,10 +26,10 @@ const Home = () => {
                     <p className="desc">Competitive Programming Team</p>
                 </div>
 
-                <img src={photos_left} alt="" className="photos__left"/>
-                <img src={photos_right} alt="" className="photos__right"/>
+                <img src={process.env.PUBLIC_URL + "/assets/photos_left.png"} alt="" className="photos__left"/>
+                <img src={process.env.PUBLIC_URL + "/assets/photos_right.png"} alt="" className="photos__right"/>
                 <button className="jollybee_logo" onClick={scrollToAbout}>
-                <img src={jollybee_logo} alt=""/>
+                <img src={process.env.PUBLIC_URL + "/assets/jollybeelogo.png"} alt=""/>
                 <div className={"dropdown-icon"}>
                     <span></span>
                     <span></span>

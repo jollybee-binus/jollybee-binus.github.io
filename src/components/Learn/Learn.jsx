@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Resources from './Resources/Resources';
-import jalansetapak from '../../assets/jalansetapak.png';
-import jalansetapak2 from '../../assets/jalansetapak2.png';
-import jalansetapak3 from '../../assets/jalansetapak3.png';
-import kiri_panah from '../../assets/kiri_panah.png';
-import kanan_panah from '../../assets/kanan_panah.png';
 import './learn.css';
 import VanillaTilt from 'vanilla-tilt';
 import { ojList } from '../data';
 
 const Learn = () => {
   const [ojs, setOjs] = useState(ojList);
-  const [backgroundImage, setBackgroundImage] = useState(jalansetapak);
+  const [backgroundImage, setBackgroundImage] = useState(process.env.PUBLIC_URL + "/assets/jalansetapak.png");
 
   useEffect(() => {
     const tiltElements = document.querySelectorAll(['.learn__oj-main', '.learn__oj-notes']);
@@ -37,13 +32,13 @@ const Learn = () => {
   useEffect(() => {
     const updateImage = () => {
       if (window.innerWidth <= 480) {
-        setBackgroundImage(jalansetapak3);
+        setBackgroundImage(process.env.PUBLIC_URL + "/assets/jalansetapak3.png");
       }
       else if (window.innerWidth <= 896) {
-        setBackgroundImage(jalansetapak2);
+        setBackgroundImage(process.env.PUBLIC_URL + "/assets/jalansetapak2.png");
       }
       else {
-        setBackgroundImage(jalansetapak);
+        setBackgroundImage(process.env.PUBLIC_URL + "/assets/jalansetapak.png");
       }
     };
 
@@ -114,14 +109,14 @@ const Learn = () => {
         </div>
 
         <div className="learn__important section">
-          <img src={kiri_panah} alt="" />
+          <img src={process.env.PUBLIC_URL + "/assets/kiri_panah.png"} alt="" />
           <div className="learn__important-text">
             <h3>One last thing</h3>
             <h1 className='greet practice__cp'><i>Practice, practice, practice</i></h1>
             <span>Please watch <a href="https://www.youtube.com/watch?v=xAeiXy8-9Y8" target="_blank">How to start Competitive Programming? For beginners!</a> by Errichto.</span>
             <span>If you keep Errichto's advice in mind and practice diligently, you should be able to improve fast.</span>
           </div>
-          <img src={kanan_panah} alt="" />
+          <img src={process.env.PUBLIC_URL + "/assets/kanan_panah.png"} alt="" />
         </div>
     </div>
   )

@@ -1,14 +1,13 @@
 import React from 'react';
 import './footer.css';
 import { Link } from 'react-router-dom';
-import jollybeelogo from '../../assets/jollybeelogo.png';
 
 const Footer = () => {
     return (
       <div className='footer'>
         <div className="footer__left">
           <Link to="/">
-            <img src={jollybeelogo} alt="Jollybee Logo" />
+            <img src={process.env.PUBLIC_URL + "/assets/jollybeelogo.png"} alt="Jollybee Logo" />
           </Link>
           <span>©2024 Jollybee. All rights reserved.</span>
         </div>
