@@ -15,8 +15,8 @@
 
 .lebahcp {
     position: absolute;
-    bottom: 0;
-    box-shadow: 0px 1px 0px 1px var(--white);
+    bottom: -1px;
+    width: 100vw;
 }
 
 .icpcwf {
