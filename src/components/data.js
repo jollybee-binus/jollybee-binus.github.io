@@ -2,24 +2,24 @@ import { Link } from 'react-router-dom';
 
 // === Alumni.jsx data ===
 export const companyListAlumni = [
-    {name: "Shopee"},
-    {name: "Google"},
-    {name: "Amazon"},
-    {name: "Meta"},
-    {name: "Talentium"},
-    {name: "Samsung"},
-    {name: "Grab"},
-    {name: "Tiket.com"},
-    {name: "Traveloka"},
-    {name: "Tokopedia"},
-    {name: "Sirclo"},
-    {name: "Blibli"},
+    {name: "Shopee", link: "https://www.sea.com/products/shopee"},
+    {name: "Google", link: "https://about.google/intl/en_id/"},
+    {name: "Amazon", link: "https://www.aboutamazon.com/about-us"},
+    {name: "Meta", link: "https://about.meta.com/"},
+    {name: "Talentium", link: "https://talentium.io/"},
+    {name: "Samsung", link: "https://www.samsung.com/id/srin/"},
+    {name: "Grab", link: "https://www.grab.com/id/en/about/"},
+    {name: "Tiket.com", link: "https://www.tiket.com/info/about-us"},
+    {name: "Traveloka", link: "https://www.traveloka.com/en-id/about-us"},
+    {name: "Tokopedia", link: "https://www.tokopedia.com/about/"},
+    {name: "Sirclo", link: "https://www.sirclo.com/about/company-overview"},
+    {name: "Blibli", link: "https://about.blibli.com/en/about"},
 ];
 
 export const universityList = [
-    {name: "National University of Singapore"},
-    {name: "University of Tsukuba"},
-    {name: "Binus University"}
+    {name: "National University of Singapore", link: "https://nus.edu.sg/"},
+    {name: "University of Tsukuba", link: "https://www.tsukuba.ac.jp/en/"},
+    {name: "Binus University", link: "https://binus.ac.id/"}
 ];
 
 // === Register.jsx data ===
@@ -80,14 +80,14 @@ export const socialList = [
 
 // === Benefits.jsx data ===
 export const cpBenefitList = [
-    {icon: `<i class="fa-solid fa-face-smile"></i>`, name: "It's fun!"},
-    {icon: `<i class="fa-solid fa-brain"></i>`, name: "Learn to think efficiently and effectively"},
-    {icon: `<i class="fa-solid fa-puzzle-piece"></i>`, name: "Improve your problem-solving skills"},
-    {icon: `<i class="fa-solid fa-code"></i>`, name: "Improve your general coding skills"},
-    {icon: `<i class="fa-solid fa-circle-nodes"></i>`, name: "Be proficient at algorithms and data structure."},
-    {icon: `<i class="fa-solid fa-user-group"></i>`, name: "Learn to code and solve problems as a team"},
-    {icon: `<i class="fa-solid fa-briefcase"></i>`, name: "Get industry recognition"},
-    {icon: `<i class="fa-solid fa-file"></i>`, name: "Win achievements for your CV"}
+    {icon: "fa-solid fa-face-smile", name: "It's fun!"},
+    {icon: "fa-solid fa-brain", name: "Learn to think efficiently and effectively"},
+    {icon: "fa-solid fa-puzzle-piece", name: "Improve your problem-solving skills"},
+    {icon: "fa-solid fa-code", name: "Improve your general coding skills"},
+    {icon: "fa-solid fa-circle-nodes", name: "Be proficient at algorithms and data structure."},
+    {icon: "fa-solid fa-user-group", name: "Learn to code and solve problems as a team"},
+    {icon: "fa-solid fa-briefcase", name: "Get industry recognition"},
+    {icon: "fa-solid fa-file", name: "Win achievements for your CV"}
 ];
 
 export const jbBenefitList = [

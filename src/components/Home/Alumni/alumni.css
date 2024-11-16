@@ -4,6 +4,14 @@
     align-items: center;
 }
 
+.alumni a {
+    color: var(--primary);
+}
+
+.alumni a:hover {
+    color: var(--secondary);
+}
+
 .alumni span,
 .alumni div {
     color: var(--white);

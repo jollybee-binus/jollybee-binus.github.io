@@ -40,9 +40,11 @@ const Navbar = () => {
         <div className={navbar}>
             <ScrollTop></ScrollTop>
             {/* logo */}
-            <Link to="/">
-                <img src={process.env.PUBLIC_URL + '/assets/jollybeelogo.png'} alt="JB Logo" className='logo'></img>
-            </Link>
+            <div>
+                <Link to="/">
+                    <img src={process.env.PUBLIC_URL + '/assets/jollybeelogo.png'} alt="JB Logo" className='logo'></img>
+                </Link>
+            </div>
 
             {/* menu list */}
             <div className="burger__wrapper" onClick={burgerClick}>

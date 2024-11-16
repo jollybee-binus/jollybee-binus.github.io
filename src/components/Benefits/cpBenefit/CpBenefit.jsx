@@ -4,7 +4,7 @@ import './CpBenefit.css';
 const CpBenefit = ({cpBenefit}) => {
   return (
     <div className="cpBenefit__wrapper">
-      <div dangerouslySetInnerHTML={{ __html: cpBenefit.icon }} className="cpBenefit__icon"></div>
+      <i className={cpBenefit.icon}></i>
       <span className="cpBenefit__name">{cpBenefit.name}</span>
     </div>
   )
