@@ -1,0 +1,208 @@
+.material__content {
+    max-width: 12rem;
+    position: relative;
+    margin-top: 3rem;
+} 
+
+.material__content img {
+    height: 5rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.material__text {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.resources__wrapper {
+    flex: 3;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    padding: 1.5rem 2rem;
+}
+
+.resources__wrapper .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.resources__wrapper .swiper-wrapper {
+    padding-bottom: 1rem;
+}
+
+.resources__wrapper .swiper {
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.resources__wrapper .swiper-button-prev,
+.resources__wrapper .swiper-button-next {
+    position: absolute;
+    top: calc(100% - 3rem);
+    z-index: 10;
+    transform: scale(0.5);
+}
+
+.resources__wrapper .swiper-button-prev {
+    left: 35%;
+}
+
+.resources__wrapper .swiper-button-next {
+    right: 35%;
+}
+
+.swiper-material .material__text {
+    color: var(--dark);
+}
+
+@media screen and (max-width: 1244px) {
+    .resources__wrapper .swiper-button-prev,
+    .resources__wrapper .swiper-button-next {
+        transform: scale(0.45);
+        top: calc(100% - 2.3rem);
+    }
+
+    .resources__wrapper .swiper-button-prev {
+        left: 28%;
+    }
+    
+    .resources__wrapper .swiper-button-next {
+        right: 28%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .resources__wrapper .swiper-button-prev,
+    .resources__wrapper .swiper-button-next {
+        transform: scale(0.4);
+        top: calc(100% - 2.2rem);
+    }
+
+    .resources__wrapper .swiper-button-prev {
+        left: 25%;
+    }
+    
+    .resources__wrapper .swiper-button-next {
+        right: 25%;
+    }
+
+    .resources__wrapper .swiper-wrapper {
+        padding-bottom: 0.8rem;
+    }
+
+    .material__content {
+        max-width: 10rem;
+        position: relative;
+        margin-top: 3rem;
+    }
+
+    .material__content img {
+        height: 4rem;
+    }
+
+    .material__text {
+        padding: 1.2rem;
+        padding-top: 2.5rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .material__content img {
+        height: 5.5rem;
+    }
+
+    .material__text {
+        padding-top: 3.5rem;
+    }
+
+    .resources__wrapper .swiper-button-prev {
+        left: 20%;
+    }
+    
+    .resources__wrapper .swiper-button-next {
+        right: 20%;
+    }
+}
+
+@media screen and (max-width: 692px) {
+    .resources__wrapper .swiper-button-prev {
+        left: 10%;
+    }
+    
+    .resources__wrapper .swiper-button-next {
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .resources__wrapper .swiper-button-prev {
+        left: 3%;
+    }
+    
+    .resources__wrapper .swiper-button-next {
+        right: 3%;
+    }
+}
+
+@media screen and (max-width: 518px) {
+    .resources__wrapper .swiper-button-prev {
+        left: -7%;
+    }
+    
+    .resources__wrapper .swiper-button-next {
+        right: -7%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .resources__wrapper {
+        flex: none;
+        padding: 0rem 0rem;
+        width: 100%;
+    }
+
+    .resources__wrapper .swiper {
+        width: 100%;
+    }
+
+    .resources__wrapper .swiper-button-prev {
+        left: 15%;
+    }
+    
+    .resources__wrapper .swiper-button-next {
+        right: 15%;
+    }
+
+    .resources__wrapper .swiper-button-prev,
+    .resources__wrapper .swiper-button-next {
+        position: absolute;
+        /* top: 40%; */
+        z-index: 10;
+        transform: scale(0.4);
+    }
+
+    .resources__wrapper .swiper-wrapper {
+        padding-bottom: 0rem;
+    }
+
+    .material__content img {
+        height: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .resources__wrapper .swiper-button-prev {
+        left: 0%;
+    }
+    
+    .resources__wrapper .swiper-button-next {
+        right: 0%;
+    }
+}
+
