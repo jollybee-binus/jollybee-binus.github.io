@@ -1,0 +1,33 @@
+---
+name: Build Static Page
+
+on:
+  push:
+    branches: main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build static pages
+        run: npm run build
+        env:
+          DISABLE_ESLINT_PLUGIN: true # TODO(AVM-Martin): re-enable eslint
+
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: feat/gh-pages
+          publish_dir: ./build
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
