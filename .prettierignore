@@ -1,0 +1,8 @@
+# build artifact
+build
+
+# other junks
+node_modules
+
+# ignore public for now
+public
