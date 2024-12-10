@@ -10,7 +10,10 @@ const Alumni = () => {
         return array.map((item, index) => (
             <span key={item.name}>
                 <span className="alumni__highlight">
-                    <a href={item.link} target="_blank">{item.name}</a>
+                    {item.link != "" ? 
+                        (<a href={item.link} target="_blank">{item.name}</a>) 
+                        : (<span>{item.name}</span>)
+                    }
                 </span>
                 {(index < array.length - 1 && array.length > 2) ? ', ' : ''}
                 {(index < array.length - 1 && array.length === 2) ? ' ' : ''}
@@ -26,8 +29,7 @@ const Alumni = () => {
             <div className="text-container">
                 <div className="links-container">
                     Competitive Programming has shaped the mindset of our members, refining them into the best version of themselves. Due to their own efforts, some of the companies of our alumni are
-                     {renderLink(companies)} 
-                    and others.
+                     {renderLink(companies)}.
                 </div>
 
                 <div className="links-container">

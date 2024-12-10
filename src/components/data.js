@@ -14,6 +14,7 @@ export const companyListAlumni = [
     {name: "Tokopedia", link: "https://www.tokopedia.com/about/"},
     {name: "Sirclo", link: "https://www.sirclo.com/about/company-overview"},
     {name: "Blibli", link: "https://about.blibli.com/en/about"},
+    {name: "others", link: ""},
 ];
 
 export const universityList = [
@@ -92,14 +93,14 @@ export const cpBenefitList = [
 
 export const jbBenefitList = [
     {name: "Fun community", explain: "To have a fun community with shared interest in competitive programming. We learn and grow together. Having community means a lot to your learning journey!"},
-    {name: "Exciting experience", explain: "Experience what it’s like to hold CP related events, like becoming a problemsetter for BNPCHS (national CP competition for highs school students)."},
-    {name: "Exclusive apprel", explain: "Get your very own exclusive Jollybee jacket."},
+    {name: "Exciting experience", explain: "Experience what it’s like to hold CP related events, like becoming a problemsetter for BNPCHS (national CP competition for high school students)."},
+    {name: "Exclusive apparel", explain: "Get your very own exclusive Jollybee jacket."},
     {name: "Contest & materials", explain: "Take part in practice contests and material sessions."},
     {name: "Indonesian CP community", explain: "Involve yourself in Indonesian CP community. For example, by coaching for training camps."},
     {name: "Company visit", explain: "Get the opportunity to visit tech company. In 2022, we visited Ajaib."},
     {name: "Competition information", explain: "Get frequent updates information about available competitions and join it for free (all competition-related expenses are paid by Binus University)."},
-    {name: "Routine outings", explain: "Go to various places with other Jollybee member to strengthen our bonding. We love to play badminton, have a tea time session, etc."},
-    {name: "Vast connection", explain: "Some of the companies of Jollybee alumni are Shopee, Google, Samsung R&D Institute Indonesia, Traveloka, Tokopedia, Sirclo, etc. Some of Jollybee alumni thrive in education and research field at National University of Singapore, University of Tsukuba, and Binus University."},
+    {name: "Routine outings", explain: "Go to various places with other Jollybee member to strengthen our bonding. We love to play badminton, have a tea time session, play board games together, etc."},
+    {name: "Vast connection", explain: "Jollybee alumni works at various companies, such as Shopee, Google, Samsung R&D Institute Indonesia, Traveloka, Tokopedia, Sirclo, etc. Some of Jollybee alumni thrive in education and research field at National University of Singapore, University of Tsukuba, and Binus University."},
 ];
 
 // === Slider.jsx in Benefits folder ===
@@ -108,7 +109,7 @@ export const testimonialList= [
     {name: "SunShine", year: "B24", src: process.env.PUBLIC_URL + "/assets/bebekdengklek.png", desc: "Sejak join Jollybee, aku jadi tahu soal apa itu Competitive Programming (CP) dan orang-orang CP di Indonesia (dan Jollybee). <br><br> Ada yang jago, ada yang jago banget, ada yang si paling sepuh. Mereka semua super friendly dan suportif terhadap satu sama lain. <br><br> Gak cuma skill CP aja yang aku dapetin dari ikut Jollybee, tapi juga banyak soft skill dari kegiatan Jollybee lainnya yang bisa aku peroleh."},
     {name: "vioalbert", year: "B24", src: process.env.PUBLIC_URL + "/assets/bebekdengklek.png", desc: "Bagi kalian yang suka problem solving dan programming, Jollybee adalah komunitas yang pas buat kalian. <br><br> Selain bisa pergi ke lomba2 dan juara, kalian juga bisa bersosialisasi dan have fun dengan sesama anggota yang punya interest yang sama. Terkadang member-member Jollybee suka ngajak jalan-jalan, main arcade, dan makan-makan bareng. <br><br> Jadi kalian ga cuma bisa berprestasi, tapi juga have fun sepanjang perjalanan Competitive Programming kalian!"},
     {name: "Feli", year: "B23", src: process.env.PUBLIC_URL + "/assets/bebekdengklek.png", desc: "Jollybee komunitasnya seru. Kamu bebas nge-cp (Competitive Programming) sesuka kamu. Kamu suka ngerjain soal? Kamu suka ngebuat soal? Kamu suka ngajar? Ayo sini. <br><br> Di Jollybee kamu bener\" bisa fokus dengan apa pun yang kamu mau kerjain. Buat lomba, kamu tinggal daftar dan lomba aja karena lomba udh dicariin, perjalanan ke venue lomba udah diurusin semua, biaya direimburse semua, dan kalo menang ada bonus tambahan dari Binus. Dan ini semua adalah default priviledgemu sebagai anggota tanpa harus bayar sepeser pun. <br><br> Terlebih, kamu juga sangat bebas berekspresi di sini. Nggak ada yang namanya hirarki, Jollybee itu benar-benar komunitas yang positif dan saling support."},
-    {name: "Blankts", year: "B25", src: process.env.PUBLIC_URL + "/assets/bebekdengklek.png", desc: "Jollybee itu komunitas yang ngubah rutinitas kuliahku yang awalnya cuman kupu-kupu (kuliah pulang-kuliah pulang) sekarang jadi ada tujuan selama berkuliah. Di Jollybee, kita benar-benar dibina untuk dapat meningkatkan kemampuan ebrpikir, berkomunikasi, dan kerja sama kita. Materi-materi dan latihan yang diberikan juga kualitasnya TOP deh. <br><br> Selain itu, di Jollybee kita juga bisa have fun bersama. Sesi board game, company visit, dan makan-makan bersama merupakan sesi paling menyenangkan buatku. Gak bakal nyesel deh join Jollybee."},
+    {name: "Blankts", year: "B25", src: process.env.PUBLIC_URL + "/assets/bebekdengklek.png", desc: "Jollybee itu komunitas yang ngubah rutinitas kuliahku yang awalnya cuman kupu-kupu (kuliah pulang-kuliah pulang) sekarang jadi ada tujuan selama berkuliah. Di Jollybee, kita benar-benar dibina untuk dapat meningkatkan kemampuan berpikir, berkomunikasi, dan kerja sama kita. Materi-materi dan latihan yang diberikan juga kualitasnya TOP deh. <br><br> Selain itu, di Jollybee kita juga bisa have fun bersama. Sesi board game, company visit, dan makan-makan bersama merupakan sesi paling menyenangkan buatku. Gak bakal nyesel deh join Jollybee."},
     {name: "Naga-Unyu", year: "B26", src: process.env.PUBLIC_URL + "/assets/bebekdengklek.png", desc: "Jollybee komunitasnya sangat asik, seru, dan relaxing. Tapi pada saat yang sama training dan komunitas ini sangat membangun dan memfasilitasi para anggotanya untuk berkembang ^_^"},
     {name: "Shiba", year: "B18", src: process.env.PUBLIC_URL + "/assets/bebekdengklek.png", desc: "I asked myself a lot of \"What if ...\" questions. One of them is \"What if I didn't join Jollybee back then?\"<br><br> 1. I don't think I'll have the foundations necessary to pass the coding interview for working abroad. I wasn't a confident person as well and being surrounded by suppportive and amazing people boosted my confidence which helped me to better unlock my potentials. <br><br> 2. I wouldn't have traveled to many different places both abroad and cities within Indonesia. Jollybee was very generous in their funding for competitions. <br><br> And lastly, I wouldn't meet all my friends."},
 ];
