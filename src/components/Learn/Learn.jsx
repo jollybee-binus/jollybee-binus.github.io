@@ -65,7 +65,7 @@ const Learn = () => {
             </div>
             <div className="for-content tilt">
               <h3>For experienced</h3>
-              <span>If you already have experience in CP, we recommend you to try their <a href="https://tlx.toki.id/courses/competitive" target="_blank">basic CP courses</a> for more challenging topics.</span>
+              <span>If you already have experience in CP, we recommend you to try their <a href="https://tlx.toki.id/courses/competitive-1" target="_blank">basic CP courses</a> for more challenging topics.</span>
             </div>
           </div> 
         </div>
@@ -113,7 +113,7 @@ const Learn = () => {
           <div className="learn__important-text">
             <h3>One last thing</h3>
             <h1 className='greet practice__cp'><i>Practice, practice, practice</i></h1>
-            <span>Please watch <a href="https://www.youtube.com/watch?v=xAeiXy8-9Y8" target="_blank">How to start Competitive Programming? For beginners!</a> by Errichto.</span>
+            <span>Please watch <a href="https://www.youtube.com/watch?v=xAeiXy8-9Y8" target="_blank">How to start Competitive Programming? For beginners!</a> by Errichto.</span> 
             <span>If you keep Errichto's advice in mind and practice diligently, you should be able to improve fast.</span>
           </div>
           <img src={process.env.PUBLIC_URL + "/assets/kanan_panah.png"} alt="" />
