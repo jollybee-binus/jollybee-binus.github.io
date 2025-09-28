@@ -26,12 +26,53 @@ export const universityList = [
 // === Register.jsx data ===
 
 export const pointList = [
-    {name: "Registration Deadline", date: "23 October 2024", desc: "The registration form will be closed in 23 October 2024 at 23.59 WIB."},
-    {name: "Selection Phase 1", date: "26-27 October 2024", desc: "Consisted of 20 problems (10 basic programming problems and 10 math problems), online (no proctoring), open for 48 hours."},
-    {name: "Selection Phase 2", date: "8 December 2024", desc: "Consisted of 6-10 competivive programming problems."},
-    {name: "Announcement", date: "January 2025", desc: "Results of registrants that advanced to Jollybee Basic Training are announced."},
-    {name: "Jollybee Basic Training", date: "February 2025", desc: "The beginning of the Jollybee Basic Training (even semester)."},
+  {
+      name: "Contest Time!",
+      date: "Until 30 November 2025",
+      desc: (
+        <>
+          Join at least <strong>5 live contests</strong> on Codeforces or AtCoder before 30 November 2025, 23:59 WIB. A contest counts only if you solve <strong>≥1 problem</strong>, and it must be <strong>live contest</strong> (not virtual or upsolving).
+        </>
+      )
+  },
+  {
+      name: "Form Submission Deadline",
+      date: "30 November 2025",
+      desc: (
+        <>
+          Submit the form with your Codeforces and AtCoder accounts by <strong>30 November 2025, 23:59 WIB</strong>. Accounts will be checked after the deadline.
+        </>
+      )
+  },
+  {
+      name: "Selection Phase",
+      date: "14 December 2025",
+      desc: (
+        <>
+          Participants who meet the registration requirements are eligible for the selection phase, which will consist of <strong>6–10 competitive programming problems</strong>.
+        </>
+      )
+  },
+  {
+      name: "Announcement",
+      date: "January 2026",
+      desc: (
+        <>
+          Results of registrants that advanced to Jollybee Basic Training are announced.
+        </>
+      )
+  },
+  {
+      name: "Jollybee Basic Training",
+      date: "February 2026",
+      desc: (
+        <>
+          The Jollybee Basic Training begins in the even semester.
+        </>
+      )
+  },
 ];
+
 
 export const questionList = [
     {question: "Can non-compsci students join Jollybee?", answer: (

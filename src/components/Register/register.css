@@ -149,6 +149,8 @@
 
 .register__timeline {
     position: relative;
+    background-color: var(--white);
+    color: var(--dark);
 }
 
 .timeline__details {
@@ -229,7 +231,7 @@
     .jejaklebah {
         position: absolute;
         top: 0;
-        left: -1.5rem;
+        left: -1.75rem;
         padding: 0;
         transform: translateX(1.5rem);
         height: 100%;
@@ -267,6 +269,12 @@
         top: 15vh;
         right: -3vw;
         width: 9vw;
+    }
+
+    .register__timeline {
+        position: relative;
+        background-color: unset;
+        color: unset;
     }
 }
 
