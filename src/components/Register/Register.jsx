@@ -7,7 +7,7 @@ import './register.css';
 import { pointList, questionList } from '../data';
 
 const Register = () => {
-  const [timelineImg, setTimelineImg] = useState(process.env.PUBLIC_URL + "/assets/jejaklebah.png");
+  const [timelineImg, setTimelineImg] = useState(process.env.PUBLIC_URL + "/assets/jejaklebah.svg");
   const [faqImg, setFaqImg] = useState(process.env.PUBLIC_URL + "/assets/lebahfaq.png");
   const [points, setPoints] = useState(pointList);
   const [questions, setQuestions] = useState(questionList);
@@ -38,13 +38,13 @@ const Register = () => {
   useEffect(() => {
     const updateImage = () => {
       if (window.innerWidth <= 576) {
-        setTimelineImg(process.env.PUBLIC_URL + "/assets/jejaklebahvertikal2.png");
+        setTimelineImg(process.env.PUBLIC_URL + "/assets/jejaklebahvertikal2.svg");
       }
       else if (window.innerWidth <= 1024) {
-        setTimelineImg(process.env.PUBLIC_URL + "/assets/jejaklebahvertikal.png");
+        setTimelineImg(process.env.PUBLIC_URL + "/assets/jejaklebahvertikal.svg");
       }
       else {
-        setTimelineImg(process.env.PUBLIC_URL + "/assets/jejaklebah.png");
+        setTimelineImg(process.env.PUBLIC_URL + "/assets/jejaklebah.svg");
       }
 
       if(window.innerWidth <= 768) {
@@ -64,7 +64,7 @@ const Register = () => {
   }, []);
 
   const handleRedirectRegister = () => {
-    window.open('https://forms.office.com/r/bv10Y5h1hX', '_blank');
+    window.open('https://forms.gle/GTeUkYRxSrKu1Rwm8', '_blank');
   };
 
   const handleRedirectJoin = () => {

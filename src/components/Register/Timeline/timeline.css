@@ -14,6 +14,11 @@
 
 .timeline .timeline__desc {
     font-size: var(--small-font-size);
+    line-height: 1.35;
+
+    strong {
+        font-weight: 800;
+    }
 }
 
 @media screen and (max-width: 1024px) {
