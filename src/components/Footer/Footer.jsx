@@ -9,7 +9,7 @@ const Footer = () => {
           <Link to="/">
             <img src={process.env.PUBLIC_URL + "/assets/jollybeelogo.png"} alt="Jollybee Logo" />
           </Link>
-          <span>©2024 Jollybee. All rights reserved.</span>
+          <span>© 2024 Jollybee. All rights reserved.</span>
         </div>
 
         <div className="footer__right">
