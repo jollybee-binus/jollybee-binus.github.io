@@ -64,7 +64,7 @@ export const pointList = [
   },
   {
       name: "Jollybee Basic Training",
-      date: "February 2026",
+      date: "February 2027",
       desc: (
         <>
           Participants who pass the <strong>2nd Selection Phase</strong> and meet the requirements above by 31 December 2026 will be eligible to join the <strong>Jollybee Basic Training</strong>, which will begin in 2027.
