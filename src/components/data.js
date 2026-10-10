@@ -25,6 +25,9 @@ export const universityList = [
 
 // === Register.jsx data ===
 
+export const registerUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdu2s5wyycPXM8miwAIWFBnqb1Pw51lrGyAnZXjvE2oaAXMMQ/viewform';
+export const discordUrl = 'https://discord.gg/fSaFuT3PaA';
+
 export const pointList = [
   {
       name: "Contest Time!",

@@ -4,7 +4,7 @@ import VanillaTilt from 'vanilla-tilt';
 import Faq from './Faq/Faq';
 import Timeline from './Timeline/Timeline';
 import './register.css';
-import { pointList, questionList } from '../data';
+import { pointList, questionList, registerUrl, discordUrl } from '../data';
 
 const Register = () => {
   const [timelineImg, setTimelineImg] = useState(process.env.PUBLIC_URL + "/assets/jejaklebah.svg");
@@ -64,11 +64,11 @@ const Register = () => {
   }, []);
 
   const handleRedirectRegister = () => {
-    window.open('https://docs.google.com/forms/d/e/1FAIpQLSdu2s5wyycPXM8miwAIWFBnqb1Pw51lrGyAnZXjvE2oaAXMMQ/viewform', '_blank');
+    window.open(registerUrl, '_blank');
   };
 
   const handleRedirectJoin = () => {
-    window.open('https://discord.gg/fSaFuT3PaA', '_blank');
+    window.open(discordUrl, '_blank');
   };
 
   return (
