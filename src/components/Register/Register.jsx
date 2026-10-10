@@ -64,7 +64,7 @@ const Register = () => {
   }, []);
 
   const handleRedirectRegister = () => {
-    window.open('https://forms.gle/GTeUkYRxSrKu1Rwm8', '_blank');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSdu2s5wyycPXM8miwAIWFBnqb1Pw51lrGyAnZXjvE2oaAXMMQ/viewform', '_blank');
   };
 
   const handleRedirectJoin = () => {
