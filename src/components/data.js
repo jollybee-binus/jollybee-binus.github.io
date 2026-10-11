@@ -34,7 +34,7 @@ export const pointList = [
       date: "Until 31 December 2026",
       desc: (
         <>
-          Participate in at least <strong>3 live contests</strong> on Codeforces, AtCoder, or TLX by 31 December 2025, 23:59 WIB. A contest counts only if you solve <strong>≥1 problem</strong> during the live contest (virtual participation and upsolving do not count). Additionally, complete the <strong>Basic Programming course</strong> on TLX.
+          Participate in at least <strong>3 live contests</strong> on Codeforces, AtCoder, or TLX by 31 December 2026, 23:59 WIB. A contest counts only if you solve <strong>≥1 problem</strong> during the live contest (virtual participation and upsolving do not count). Additionally, complete the <strong>Basic Programming course</strong> on TLX.
         </>
       )
   },
