@@ -25,28 +25,31 @@ export const universityList = [
 
 // === Register.jsx data ===
 
+export const registerUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdu2s5wyycPXM8miwAIWFBnqb1Pw51lrGyAnZXjvE2oaAXMMQ/viewform';
+export const discordUrl = 'https://discord.gg/fSaFuT3PaA';
+
 export const pointList = [
   {
       name: "Contest Time!",
-      date: "Until 30 November 2025",
+      date: "Until 31 December 2026",
       desc: (
         <>
-          Join at least <strong>5 live contests</strong> on Codeforces or AtCoder before 30 November 2025, 23:59 WIB. A contest counts only if you solve <strong>≥1 problem</strong>, and it must be <strong>live contest</strong> (not virtual or upsolving).
+          Participate in at least <strong>3 live contests</strong> on Codeforces, AtCoder, or TLX by 31 December 2026, 23:59 WIB. A contest counts only if you solve <strong>≥1 problem</strong> during the live contest (virtual participation and upsolving do not count). Additionally, complete the <strong>Basic Programming course</strong> on TLX.
         </>
       )
   },
   {
       name: "Form Submission Deadline",
-      date: "30 November 2025",
+      date: "31 October 2026",
       desc: (
         <>
-          Submit the form with your Codeforces and AtCoder accounts by <strong>30 November 2025, 23:59 WIB</strong>. Accounts will be checked after the deadline.
+          Submit the form with your Codeforces/AtCoder/TLX/VJudge accounts by <strong>31 October 2026, 23:59 WIB</strong>. Accounts will be checked after the deadline.
         </>
       )
   },
   {
-      name: "Selection Phase",
-      date: "14 December 2025",
+      name: "1st Selection Phase",
+      date: "14-15 November 2026",
       desc: (
         <>
           Participants who meet the registration requirements are eligible for the selection phase, which will consist of <strong>6–10 competitive programming problems</strong>.
@@ -54,20 +57,20 @@ export const pointList = [
       )
   },
   {
-      name: "Announcement",
-      date: "January 2026",
+      name: "2nd Selection Phase",
+      date: "29 November 2026",
       desc: (
         <>
-          Results of registrants that advanced to Jollybee Basic Training are announced.
+          Participants who pass the <strong>1st Selection Phase</strong> will advance to the <strong>2nd Selection Phase</strong>.
         </>
       )
   },
   {
       name: "Jollybee Basic Training",
-      date: "February 2026",
+      date: "February 2027",
       desc: (
         <>
-          The Jollybee Basic Training begins in the even semester.
+          Participants who pass the <strong>2nd Selection Phase</strong> and meet the requirements above by 31 December 2026 will be eligible to join the <strong>Jollybee Basic Training</strong>, which will begin in 2027.
         </>
       )
   },
@@ -162,6 +165,7 @@ export const materialList = [
     {name: "Competitive Programming 2 — book by Steven Halim and Felix Halim", src: process.env.PUBLIC_URL + "/assets/cp2.jpg", link: "https://www.comp.nus.edu.sg/~stevenha/myteaching/competitive_programming/cp2.pdf"},
     {name: "Competitive Programming 4 — book by Steven Halim, Felix Halim, and Suhendry Effendy", src: process.env.PUBLIC_URL + "/assets/cp4.jpg", link: "https://www.amazon.com/Competitive-Programming-4-Book-2/dp/B093K67NVN"},
     {name: "CP Algorithms — Jakob Kogler, Oleksandr Kulkov, and Rodion Gorkovenko", src: process.env.PUBLIC_URL + "/assets/cp_algo.png", link: "https://cp-algorithms.com/index.html"},
+    {name: "The Ultimate Topic List — by YouKn0wWho Academy", src: process.env.PUBLIC_URL + "/assets/youkn0wwho.png", link: "https://youkn0wwho.academy/topic-list"},
 ];
 
 // === Learn.jsx data ===
